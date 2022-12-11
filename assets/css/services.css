@@ -1897,7 +1897,7 @@ cursor: default;
             }
             .client-say {
             width: 100%;
-            background: url(assets/img/service/banner_side.png) 50% 0 repeat-y;
+            background: url(../img/service/banner_side.png) 50% 0 repeat-y;
             /* background: url(../img/service/banner_side.png) 50% 0 repeat-y; */
             background-position: center 0;
             background-size: cover;
