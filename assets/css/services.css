@@ -14,6 +14,7 @@
 .broadc-m {
     margin-top: -100px;
 }
+
 .development-img {
     position: relative;
 }
@@ -23,6 +24,8 @@
     left: 20%;
     top: 20%;
 }
+
+
 /* broadcasting */
 
 .broadc-m {
@@ -49,6 +52,8 @@
 .broadcasting-item .radious-icon {
     border: none;
 }
+
+
 /* new page deign 11/10/22 */
 
 .single-service-grid {
@@ -142,6 +147,8 @@
 .nav-border {
     border-bottom: 1px solid #312783;
 }
+
+
 /*width: calc(100%/4);*/
 
 .price a.button-tab {
@@ -201,6 +208,8 @@
     color: #fff;
     text-decoration: none;
 }
+
+
 /* .price-slider.owl-theme .owl-nav.disabled {
 opacity: .5;
 cursor: default;
@@ -293,7 +302,6 @@ cursor: default;
     font-weight: 400;
 }
 
-
 .new-price-fetaure ul li,
 .price-feature-item>ul>li {
     position: relative;
@@ -303,7 +311,8 @@ cursor: default;
     font-size: 16px;
     line-height: 26px;
 }
-.new-price-fetaure ul li:before ,
+
+.new-price-fetaure ul li:before,
 .price-feature-item>ul>li:before {
     position: absolute;
     content: url(../img/service/Subtract.svg);
@@ -541,6 +550,8 @@ cursor: default;
 .our-pricing .modal-header {
     border-bottom: 0px;
 }
+
+
 /* Research page */
 
 .research-details-page .project-title h3 {
@@ -727,6 +738,8 @@ cursor: default;
     line-height: 25px;
     color: #312783;
 }
+
+
 /* product-page */
 
 .s-heading-2 {
@@ -786,12 +799,14 @@ cursor: default;
     line-height: 24px;
     color: #FFFFFF;
     border-radius: 4px;
-    padding: 8px 20px;
+    padding: 8px 15px;
     transition: all .3s;
     -webkit-transition: all .3s;
     -moz-transition: all .3s;
     -ms-transition: all .3s;
     -o-transition: all .3s;
+    display: flex;
+    align-items: center;
 }
 
 .product-btn-t {
@@ -882,13 +897,13 @@ cursor: default;
     padding: 16px 15px;
 }
 
-.product-price-item .cart-price .product-btn-t {
+.product-price-item .cart-price d-flex.product-btn-t {
     padding: 8px 10px;
     display: flex;
     align-items: center;
 }
 
-.product-price-item .cart-price .product-btn-t:hover {
+.product-price-item .cart-price d-flex.product-btn-t:hover {
     background: transparent;
     color: inherit;
 }
@@ -1415,6 +1430,8 @@ cursor: default;
 .write-question .q-box {
     background: #A6C7F9;
 }
+
+
 /* consult */
 
 .consulant-slider .owl-carousel .owl-item img {
@@ -1511,6 +1528,7 @@ cursor: default;
 .middle-pannel .s-heading-2 {
     font-size: 25px;
 }
+
 @media (min-width: 992px) and (max-width: 1200px) {
     .single-price-item .price-item h3 {
         font-size: 52px;
@@ -1597,7 +1615,6 @@ cursor: default;
         font-size: 15px;
         line-height: 22px;
     }
-
     .single-price-item .popular-item-h h5 {
         font-weight: 500;
         font-size: 15px;
@@ -1748,7 +1765,8 @@ cursor: default;
         border-right: 0px solid #312783;
         border-bottom: 1px solid #312783;
     }
-    .new-price-fetaure ul li, .price-feature-item>ul>li {
+    .new-price-fetaure ul li,
+    .price-feature-item>ul>li {
         margin-bottom: 7px;
         font-size: 14px;
         line-height: 20px;
@@ -1777,6 +1795,7 @@ cursor: default;
         padding: 8px 10px;
     }
 }
+
 .customized-body .price-feature-item .tableDesign td:before,
 .single-price-item .new-price-fetaure .tableDesign td:before {
     position: absolute;
@@ -1788,35 +1807,38 @@ cursor: default;
     background-size: cover;
     text-align: center;
     background-repeat: repeat;
-   
-/* table-ubtract-hover.svg */
+    /* table-ubtract-hover.svg */
 }
+
 .single-price-item:hover .new-price-fetaure .tableDesign td:before {
     position: absolute;
     content: url(../img/service/table-ubtract-hover.svg);
 }
-.customized-body .price-feature-item  .tableDesign td:first-child{
+
+.customized-body .price-feature-item .tableDesign td:first-child {
     max-width: 120px;
     padding-left: 18px !important;
 }
-.customized-body  .tableDesign td:first-child{
+
+.customized-body .tableDesign td:first-child {
     max-width: 120px;
 }
-.single-price-item .new-price-fetaure  .tableDesign td:first-child{
+
+.single-price-item .new-price-fetaure .tableDesign td:first-child {
     padding-left: 18px !important;
     max-width: 170px;
-
 }
+
 .customized-body .tableDesign td,
-.single-price-item .new-price-fetaure  .tableDesign td{
+.single-price-item .new-price-fetaure .tableDesign td {
     font-weight: 400;
     font-size: 12px;
     line-height: 20px;
     margin-bottom: 10px;
     vertical-align: top;
-    
 }
-.single-price-item .new-price-fetaure .tableDesign tr th{
+
+.single-price-item .new-price-fetaure .tableDesign tr th {
     font-weight: 500;
     font-size: 14px;
     line-height: 26px;
@@ -1826,203 +1848,224 @@ cursor: default;
 
 
 /* HRM CSS */
+
 .banner-hrm .s-heading {
-            margin-bottom: 10px;
-            color: #141451;
-        }
-       .banner-hrm .overlay::after {
-            content: "";
-            background-color: rgb(49 39 131 / 34%);
-            z-index: -1;
-        }
-      .banner-hrm .com-bor-btn, .cmn-btn-blue {
-        padding: 8px 15px;
-     
-        }
-       
-        .hrm-feature .service-wrppper-s .single-service p {
-            height: 80px;
-            line-height: 20px;
-            -webkit-line-clamp: 4;
-            -moz-line-clamp: 4;
-            font-weight: 400;
-        }
-          .hrm-feature .single-service-grid {
-           grid-template-columns: repeat( auto-fit, minmax(320px, 1fr));
-        }
-       .pricing-wrapper-hrm .price-item h3 sub{
-            font-size: 22px;
-            font-weight: 500;
-            left: -10px;
-        }
-            .pricing-wrapper-hrm .single-price-item .price-feature-item  span{
-            font-weight: 500;
-            font-size: 16px;
-            color: #312783;
-            }
-            .pricing-wrapper-hrm .single-price-item .price-feature-item  span a{
-            color: #312783;
-            }
-            .pricing-wrapper-hrm .single-price-item.active .price-feature-item span,
-            .pricing-wrapper-hrm .single-price-item:hover .price-feature-item  span,
-            .pricing-wrapper-hrm .single-price-item.active .price-feature-item span a,
-            .pricing-wrapper-hrm .single-price-item:hover .price-feature-item  span a{
+    margin-bottom: 10px;
+    color: #141451;
+}
 
-            color: #fff;
-            }
-            .hrm-feature{
-                background-color: #F8F8F8;
-                padding: 60px 0px;
-                margin-top: 50px;
-            }
-              .client-say .rotate {
-            margin: auto;
-            display: block;
-            width: 95px;
-            height: 95px;
-            background-color: #999999;
-            border-radius: 5px;
-            margin-bottom: 37px;
-            margin-top: -75px;
-            -webkit-border-radius: 100%;
-            -moz-border-radius: 100%;
-            border-radius: 100%;
-            }
+.banner-hrm .overlay::after {
+    content: "";
+    background-color: rgb(49 39 131 / 34%);
+    z-index: -1;
+}
 
-               .client-say .rotate img {
-            -webkit-border-radius: 100%;
-            -moz-border-radius: 100%;
-            border-radius: 100%;
-            border: 6px solid #fff;
-            }
-            .client-say {
-            width: 100%;
-            background: url(../img/service/banner_side.png) 50% 0 repeat-y;
-            /* background: url(../img/service/banner_side.png) 50% 0 repeat-y; */
-            background-position: center 0;
-            background-size: cover;
-            position: relative;
-            z-index: 66;
-            padding-top: 50px;
-            padding-bottom: 80px;
-            margin: 50px 0px;
-            overflow: hidden;
-            }
-         .client-say .main {
-        background: #ffffff;
-        padding: 20px;
-        padding-bottom: 30px;
-        border-radius: 10px;
-        margin-top: 60px;
-        }
+.banner-hrm .com-bor-btn,
+.cmn-btn-blue {
+    padding: 8px 15px;
+}
 
-          .client-say .main p {
-        margin-top: -10px;
-        padding-bottom: 20px;
-        color: #000;
-        font-style: italic;
-        }
+.hrm-feature .service-wrppper-s .single-service p {
+    height: 80px;
+    line-height: 20px;
+    -webkit-line-clamp: 4;
+    -moz-line-clamp: 4;
+    font-weight: 400;
+}
 
-          .client-say .main h4 a {
-        font-size: 16px;
-        font-weight: 500;
-        color: #000000;
-        -webkit-transition: all 0.5s;
-        -o-transition: all 0.5s;
-        -ms-transition: all 0.5s;
-        -moz-transition: all 0.5s;
-        transition: all 0.5s;
-        }
+.hrm-feature .single-service-grid {
+    grid-template-columns: repeat( auto-fit, minmax(320px, 1fr));
+}
 
-         .client-say .main h4 a:hover {
-        color: rgba(91, 44, 208, 1);
-        -webkit-transition: all 0.5s;
-        -o-transition: all 0.5s;
-        -ms-transition: all 0.5s;
-        -moz-transition: all 0.5s;
-        transition: all 0.5s;
-        }
+.pricing-wrapper-hrm .price-item h3 sub {
+    font-size: 22px;
+    font-weight: 500;
+    left: -10px;
+}
 
-         .client-say .main h5 {
-        font-size: 14px;
-        color: rgba(91, 44, 208, 1);
-        padding-top: 5px;
-        padding-bottom: 10px;
-        }
+.pricing-wrapper-hrm .single-price-item .price-feature-item span {
+    font-weight: 500;
+    font-size: 16px;
+    color: #312783;
+}
 
-      .client-say .main p {
-        font-style: italic;
-        }
+.pricing-wrapper-hrm .single-price-item .price-feature-item span a {
+    color: #312783;
+}
 
-       
-        .client-say .owl-theme .owl-dots {
-        position: absolute;
-        left: 0;
-        right: 0;
-        margin: 0px auto;
-        bottom: -50px;
-        }
+.pricing-wrapper-hrm .single-price-item.active .price-feature-item span,
+.pricing-wrapper-hrm .single-price-item:hover .price-feature-item span,
+.pricing-wrapper-hrm .single-price-item.active .price-feature-item span a,
+.pricing-wrapper-hrm .single-price-item:hover .price-feature-item span a {
+    color: #fff;
+}
 
-        .client-say .owl-theme .owl-dots .owl-dot.active,
-        .client-say .owl-theme .owl-dots .owl-dot:hover {
-        -webkit-transition: all 0.5s;
-        -o-transition: all 0.5s;
-        -ms-transition: all 0.5s;
-        -moz-transition: all 0.5s;
-        transition: all 0.5s;
-        }
+.hrm-feature {
+    background-color: #F8F8F8;
+    padding: 60px 0px;
+    margin-top: 50px;
+}
 
-        .client-say .owl-theme .owl-dots .owl-dot {
-        position: relative;
-        -webkit-transition: all 0.5s;
-        -o-transition: all 0.5s;
-        -ms-transition: all 0.5s;
-        -moz-transition: all 0.5s;
-        transition: all 0.5s;
-        }
+.client-say .rotate {
+    margin: auto;
+    display: block;
+    width: 95px;
+    height: 95px;
+    background-color: #999999;
+    border-radius: 5px;
+    margin-bottom: 37px;
+    margin-top: -75px;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    border-radius: 100%;
+}
 
-        .client-say .owl-theme .owl-dots .owl-dot.active span,
-        .client-say .owl-theme .owl-dots .owl-dot:hover span {
-        background: #fff;
-        width: 10px;
-        height: 10px;
-        -webkit-transition: all 0.5s;
-        -o-transition: all 0.5s;
-        -ms-transition: all 0.5s;
-        -moz-transition: all 0.5s;
-        transition: all 0.5s;
-        }
+.client-say .rotate img {
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    border-radius: 100%;
+    border: 6px solid #fff;
+}
 
-        .client-say .owl-theme .owl-dots .owl-dot span {
-        width: 10px;
-        height: 10px;
-        margin: 5px;
-        background: #fff;
-        -webkit-transition: all 0.5s;
-        -o-transition: all 0.5s;
-        -ms-transition: all 0.5s;
-        -moz-transition: all 0.5s;
-        transition: all 0.5s;
-        }
+.client-say {
+    width: 100%;
+    background: url(../img/service/banner_side.png) 50% 0 repeat-y;
+    /* background: url(../img/service/banner_side.png) 50% 0 repeat-y; */
+    background-position: center 0;
+    background-size: cover;
+    position: relative;
+    z-index: 66;
+    padding-top: 50px;
+    padding-bottom: 80px;
+    margin: 50px 0px;
+    overflow: hidden;
+}
 
-        .client-say .owl-theme .owl-dots .owl-dot.active:after {
-        content: '';
-        border: 2px solid #fff;
-        border-radius: 100%;
-        position: absolute;
-        left: 1px;
-        width: 10px;
-        padding: 7px;
-        height: 10px;
-        right: 0;
-        top: 1px;
-        -webkit-transition: all 0.5s;
-        -o-transition: all 0.5s;
-        -ms-transition: all 0.5s;
-        -moz-transition: all 0.5s;
-        transition: all 0.5s;
-        }
+.client-say .main {
+    background: #ffffff;
+    padding: 20px;
+    padding-bottom: 30px;
+    border-radius: 10px;
+    margin-top: 60px;
+}
 
-        .client-say .owl-theme .owl-nav {
-        display: none;
-        }
+.client-say .main p {
+    margin-top: -10px;
+    padding-bottom: 20px;
+    color: #000;
+    font-style: italic;
+}
+
+.client-say .main h4 a {
+    font-size: 16px;
+    font-weight: 500;
+    color: #000000;
+    -webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    transition: all 0.5s;
+}
+
+.client-say .main h4 a:hover {
+    color: rgba(91, 44, 208, 1);
+    -webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    transition: all 0.5s;
+}
+
+.client-say .main h5 {
+    font-size: 14px;
+    color: rgba(91, 44, 208, 1);
+    padding-top: 5px;
+    padding-bottom: 10px;
+}
+
+.client-say .main p {
+    font-style: italic;
+}
+
+.client-say .owl-theme .owl-dots {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0px auto;
+    bottom: -50px;
+}
+
+.client-say .owl-theme .owl-dots .owl-dot.active,
+.client-say .owl-theme .owl-dots .owl-dot:hover {
+    -webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    transition: all 0.5s;
+}
+
+.client-say .owl-theme .owl-dots .owl-dot {
+    position: relative;
+    -webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    transition: all 0.5s;
+}
+
+.client-say .owl-theme .owl-dots .owl-dot.active span,
+.client-say .owl-theme .owl-dots .owl-dot:hover span {
+    background: #fff;
+    width: 10px;
+    height: 10px;
+    -webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    transition: all 0.5s;
+}
+
+.client-say .owl-theme .owl-dots .owl-dot span {
+    width: 10px;
+    height: 10px;
+    margin: 5px;
+    background: #fff;
+    -webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    transition: all 0.5s;
+}
+
+.client-say .owl-theme .owl-dots .owl-dot.active:after {
+    content: '';
+    border: 2px solid #fff;
+    border-radius: 100%;
+    position: absolute;
+    left: 1px;
+    width: 10px;
+    padding: 7px;
+    height: 10px;
+    right: 0;
+    top: 1px;
+    -webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    transition: all 0.5s;
+}
+
+.client-say .owl-theme .owl-nav {
+    display: none;
+}
+
+
+/* service-details */
+
+.service-details-slider .price-slider.com-slider.owl-theme .owl-nav [class*=owl-] {
+    top: -2%;
+}
+
+.service-details-slider .service-img-slider-one .owl-nav {
+    display: none;
+}
