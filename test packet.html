@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{{asset("/")}}public/css/report.css">
+</head>
+
+<body>
+    <?php
+        if ($type == 'T') {
+            $fulltype = 'Depreciation Fund FDR';
+        } else {
+            $fulltype = 'BBA Fund FDR';
+        }
+        ?>
+
+    <button onclick="window.location.href = '{{URL::to('/')}}/fdrreport?status=type'" class="backbutton"> Back</button>
+    <button onclick="printDi('printarea')" class="printbutton"><i class="fa fa-print" aria-hidden="true"></i>
+        Print</button>
+    <div id="printarea">
+        <div class="headerContent" style="padding: 5px 0px;display: none">
+            <center>
+                <h3 class="box-title" style="font-family: arial;font-weight: bold">Bangladesh Bridge Authority</h3>
+                <h4 style="font-family: Montserrat;font-weight: bold">Setu Bhaban, Banani, Dhaka</h4>
+                <h3 class="box-title" style="font-family: arial;font-weight: bold"><span
+                        style="border-bottom: 1px solid">FDR Statement <?= $fromname ?></span></h3>
+            </center>
+            <div style="display: contents;">
+                <div style="float: left;">
+                    <span style="font-family: arial;position: relative;bottom: 10px"><?= $fulltype ?></span>
+                </div>
+                <div style="float: right;">
+                    <span style="font-family: arial;position: relative;bottom: 10px; float: right">Print Date:
+                        <?= date('d/m/Y') ?></span>
+                </div>
+            </div>
+
+            <table style="font-family:arial; width: 100%;">
+                <div id="printAndTitle" style="display:block;">
+                    <span style="font-family: arial;position: relative;bottom: 10px"><?= $fulltype ?></span>
+                    <span style="font-family: arial;position: relative;bottom: 10px;float: right">Print Date:
+                        <?= date('d/m/Y') ?></span>
+                </div>
+
+                <thead style="">
+                    <tr style="font-weight:bold;text-transform: capitalize;font-family:arial">
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                        <th colspan="2"></th>
+                        <th colspan="2"></th>
+                        <th></th>
+                        <th colspan="6" style="text-align: left">Interest</th>
+                        <th></th>
+                    </tr>
+                    <tr style="font-weight:bold;text-transform: capitalize;font-family:arial">
+                        <th rowspan="2" style="text-align: center;width: 8%;">Branch Name</th>
+                        <th rowspan="2" style="text-align: center; width: 4%; padding: 1px;">FDR Name & Id</th>
+                        <th rowspan="2" style="text-align: center;width: 7%;">FDR/Account Number</th>
+                        <th colspan="2" style="text-align: center">Opening</th>
+                        <th colspan="2" style="text-align: center">Renewal</th>
+                        <th rowspan="2" style="text-align: center; width: 4%;">Maturity Date</th>
+                        <th rowspan="2" style="text-align: center; width: 7.5%;">Interest Rate</th>
+                        <th rowspan="2" style="text-align: center; width: 7.5%;">Interest Amount</th>
+                        <th colspan="4" style="text-align: center;">Deduction</th>
+                        <th rowspan="2" style="text-align: center; width: 7.5%;">Net Interest</th>
+                        <th rowspan="2" style="text-align: center; width: 7.5%">Net Amount(Principle + Net Interest)</th>
+                    </tr>
+                    <tr style="font-weight:bold;text-transform: capitalize;font-family:arial">
+                        <th style="text-align: center; width: 4%;">Date</th>
+                        <th style="text-align: center;width: 7.5%;">Principle</th>
+                        <th style="text-align: center;width: 4%;">Date</th>
+                        <th style="text-align: center;width: 7.5%">Principle</th>
+                        <th style="text-align: center; width: 4%">AIT Rate</th>
+                        <th style="text-align: center;width: 7.5%;">AIT Amount</th>
+                        <th style="text-align: center;width:5%;">Excise Duty</th>
+                        <th style="text-align: center; width: 7.5%;">Total Deduction</th>
+                    </tr>
+                </thead>
+            </table>
+        </div>
+        <div id="headerName" style="display: block;">
+            <center>
+                <h3 class="box-title" style="font-family: arial;font-weight: bold">Bangladesh Bridge Authority</h3>
+                <h4 style="font-family: Montserrat;font-weight: bold">Setu Bhaban, Banani, Dhaka</h4>
+                <h3 class="box-title" style="font-family: arial;font-weight: bold"><span
+                        style="border-bottom: 1px solid">FDR Statement <?= $fromname ?></span></h3>
+            </center>
+        </div>
+        <div id="tableHeader" style="display: block;">
+            <table style="font-family:arial; width: 100%;">
+                <div id="printAndTitle" style="display:block;">
+                    <span style="font-family: arial;position: relative;bottom: 10px"><?= $fulltype ?></span>
+                    <span style="font-family: arial;position: relative;bottom: 10px;float: right">Print Date:
+                        <?= date('d/m/Y') ?></span>
+                </div>
+
+                <thead>
+                    <tr style="font-weight:bold;text-transform: capitalize;font-family:arial">
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                        <th colspan="2"></th>
+                        <th colspan="2"></th>
+                        <th></th>
+                        <th colspan="6" style="text-align: left">Interest</th>
+                        <th></th>
+                    </tr>
+                    <tr style="font-weight:bold;text-transform: capitalize;font-family:arial">
+                        <th rowspan="2" style="text-align: center;width: 8%;">Branch Name</th>
+                        <th rowspan="2" style="text-align: center; width: 4%;">FDR Name & Id</th>
+                        <th rowspan="2" style="text-align: center;width: 7%;">FDR/Account Number</th>
+                        <th colspan="2" style="text-align: center">Opening</th>
+                        <th colspan="2" style="text-align: center">Renewal</th>
+                        <th rowspan="2" style="text-align: center; width: 4%;">Maturity Date</th>
+                        <th rowspan="2" style="text-align: center; width: 7.5%;">Interest Rate</th>
+                        <th rowspan="2" style="text-align: center; width: 7.5%;">Interest Amount</th>
+                        <th colspan="4" style="text-align: center;">Deduction</th>
+                        <th rowspan="2" style="text-align: center; width: 7.5%;">Net Interest</th>
+                        <th rowspan="2" style="text-align: center; width: 7.5%">Net Amount(Principle + Net Interest)
+                        </th>
+                    </tr>
+                    <tr style="font-weight:bold;text-transform: capitalize;font-family:arial">
+                        <th style="text-align: center; width: 4%;">Date</th>
+                        <th style="text-align: center;width: 7.5%;">Principle</th>
+                        <th style="text-align: center;width: 4%;">Date</th>
+                        <th style="text-align: center;width: 7.5%">Principle</th>
+                        <th style="text-align: center; width: 4%">AIT Rate</th>
+                        <th style="text-align: center;width: 7.5%;">AIT Amount</th>
+                        <th style="text-align: center;width:5%;">Excise Duty</th>
+                        <th style="text-align: center; width: 7.5%;">Total Deduction</th>
+                    </tr>
+                </thead>
+            </table>
+        </div>
+        <table style="font-family:arial; width: 100%; ">
+            <tbody role="rowgroup" style="font-family:arial;">
+                <?php
+                    $grandtotal_g = 0;
+                    $grandopeningbalane = 0;
+                    $grandrenewalbalane = 0;
+                    $grandtotalgross = 0;
+                    $grandtotalcirculer = 0;
+                    $grandtotalexciseduty = 0;
+                    $grandtotaldeduction = 0;
+                    $grandtotalnetinterest = 0;
+                    $grandtotalnetamount = 0;
+
+                    $grandGovtRenPrinciple = 0;
+                    $grandPrivtRenPrinciple = 0;
+                    $grandNBFIRenPrinciple = 0;
+                    ?>
+
+                <?php foreach ($fdrbanktype as $banktype) { ?>
+                <?php if ($banktype->banktype == 'Government') { ?>
+                <tr role="row">
+                    <td colspan="16" class="type">
+                        <h2 style="position: relative;right:9px;color: red !important;"><b>Government
+                                Bank</b></h2>
+                    </td>
+                </tr>
+                <?php foreach ($fdrbanklist as $bankvalue) { ?>
+                <?php if ($bankvalue->banktype == 'Government') { ?>
+                <tr role="row">
+                    <td colspan="16" class="bankname">
+                        <h2 style="position: relative;right:9px;">Bank Name: <?= $bankvalue->bankname ?>
+                        </h2>
+                    </td>
+                </tr>
+                <?php
+                                    if (!empty($fromtarik) && !empty($totarik)) {
+                                        $fafdrresult = DB::table('FA_FDRINFO')
+                                                ->when($type, function ($query, $type) {
+                                                    return $query->where('fdrtype', 'like', '%' . $type . '%');
+                                                })
+                                                ->where('fdr_start_date', '>=', $fromtarik)
+                                                ->where('fdr_start_date', '<=', $totarik)
+                                                ->where('incash_yn', 'N')
+                                                ->where('bankname', $bankvalue->bankname)
+                                                ->orderBy('branchname', 'asc')
+                                                ->get();
+                                    } else {
+                                        $fafdrresult = DB::table('FA_FDRINFO')
+                                                ->where('fdrtype', $type)
+                                                ->where('incash_yn', 'N')
+                                                ->where('bankname', $bankvalue->bankname)
+                                                ->orderBy('branchname', 'asc')
+                                                ->get();
+                                    }
+
+                                    $getfdrinfo = $fafdrresult;
+
+                                    $exitbranchname = "";
+
+                                    $fdr_number = 0;
+                                    $openingbalane = 0;
+                                    $renewalbalane = 0;
+                                    $totalgross = 0;
+                                    $totalcirculer = 0;
+                                    $totalexciseduty = 0;
+                                    $totaldeduction = 0;
+                                    $totalnetinterest = 0;
+                                    $totalnetamount = 0;
+                                    $grandtotal_g += count($getfdrinfo);
+                                    foreach ($getfdrinfo as $value) {
+                                        $fdr_number += count((array) $value->fdr_number);
+                                        $openingbalane += $value->start_amount;
+                                        $renewalbalane += $value->fdr_amount;
+                                        ?>
+                <tr role="row" style="font-family:arial; text-align: center">
+                    <?php
+                                            if ($value->branchname !== $exitbranchname) {
+                                                $exitbranchname = $value->branchname;
+
+                                                if (!empty($fromtarik) && !empty($totarik)) {
+                                                    $tablerowspan = DB::table('FA_FDRINFO')
+                                                            ->where('fdrtype', $type)
+                                                            ->where('fdr_start_date', '>=', $fromtarik)
+                                                            ->where('fdr_start_date', '<=', $totarik)
+                                                            ->where('incash_yn', 'N')
+                                                            ->where('bankname', $value->bankname)
+                                                            ->where('branchname', $value->branchname)
+                                                            ->count();
+                                                } else {
+                                                    $tablerowspan = DB::table('FA_FDRINFO')
+                                                            ->where('fdrtype', $type)
+                                                            ->where('incash_yn', 'N')
+                                                            ->where('bankname', $value->bankname)
+                                                            ->where('branchname', $value->branchname)
+                                                            ->count();
+                                                }
+                                                ?>
+                    <td style="text-align: left; width: 8%;" rowspan="<?= $tablerowspan ?>">
+                        <?php echo $exitbranchname ?></td>
+                    <?php } ?>
+
+                    <td style="text-align: center; width: 4%;">BBA (<?= $value->fdr_id ?>)</td>
+                    <td style="text-align: left; width: 7%;">
+                        <!--<p>-->
+                        <?php
+                                                echo str($value->fdr_number);
+//                                                $string = str_split($value->fdr_number);
+//                                                $word = "/";
+//                                                
+//                                                $posintion = strpos($mystring, $word);
+//                                                $fdrnumber = explode('/', $value->fdr_number);
+//
+//                                                if (@$fdrnumber[1]) {
+//                                                    echo $fdrnumber[0].'<br>';
+//                                                } else {
+//                                                    echo $fdrnumber[0] . '/<br>' . @$fdrnumber[1];
+//                                            
+                                                ?>
+                        <!--</p>-->
+
+                    </td>
+
+                    <td style="text-align: center; width: 4%;"><?= date('d/m/Y', strtotime($value->fdr_start_date)) ?>
+                    </td>
+                    <td style="text-align: right;width: 7.5%;"><?= number_format($value->start_amount, 2, '.', ',') ?>
+                    </td>
+                    <td style="text-align: center; width: 4%;"><?= date('d/m/Y', strtotime($value->opening_date)) ?>
+                    </td>
+                    <td style="text-align: right;width: 7.5%;"><?= number_format($value->fdr_amount, 2, '.', ',') ?></td>
+
+                    <td style="text-align: center; width: 4%;"><?= date('d/m/Y', strtotime($value->maturity_date)) ?>
+                    </td>
+                    <td style="text-align: center; width:7.5%;"><?= number_format($value->interest_rate, 2, '.', ',') ?>
+                    </td>
+                    <?php
+                                            $gross = (($value->fdr_amount / 100) * $value->interest_rate);
+                                            $circuler = (($gross / 100) * $value->tax_rate);
+                                            $total_deduction = $circuler + $value->excise_duty;
+                                            $net_interest = $gross - $total_deduction;
+                                            $net_amount = $value->fdr_amount + $net_interest;
+
+                                            $totalgross += $gross;
+                                            $totalcirculer += $circuler;
+                                            $totalexciseduty += $value->excise_duty;
+                                            $totaldeduction += $total_deduction;
+                                            $totalnetinterest += $net_interest;
+                                            $totalnetamount += $net_amount;
+                                            ?>
+                    <td style="text-align:right; width: 7.5%;"><?= number_format($gross, 2, '.', ',') ?></td>
+                    <td style="text-align:center; width: 4%;">
+                        <?= number_format($value->tax_rate, 2, '.', ',') ?></td>
+                    <td style="text-align:right; width: 7.5%;"><?= number_format($circuler, 2, '.', ',') ?></td>
+                    <td style="text-align:center; width: 5%;"><?= number_format($value->excise_duty, 2, '.', ',') ?>
+                    </td>
+                    <td style="text-align:right; width: 7.5%;"><?= number_format($total_deduction, 2, '.', ',') ?></td>
+                    <td style="text-align:right; width: 7.5%;"><?= number_format($net_interest, 2, '.', ',') ?></td>
+                    <td style="text-align:right; width: 7.5%;"><?= number_format($net_amount, 2, '.', ',') ?></td>
+                </tr>
+                <?php
+                                    }
+                                    $grandopeningbalane += $openingbalane;
+                                    $grandrenewalbalane += $renewalbalane;
+                                    $grandtotalgross += $totalgross;
+                                    $grandtotalcirculer += $totalcirculer;
+                                    $grandtotalexciseduty += $totalexciseduty;
+                                    $grandtotaldeduction += $totaldeduction;
+                                    $grandtotalnetinterest += $totalnetinterest;
+                                    $grandtotalnetamount += $totalnetamount;
+                                    $grandGovtRenPrinciple += $renewalbalane;
+                                    ?>
+                <tr role="row" style="">
+                    <td colspan="4" style="text-align:right;font-weight: bold"><span
+                            style="position: relative;right:65px;">Total Instrument:</span> <span
+                            style="position: relative;right:10px;"><?= $fdr_number ?></span></td>
+                    <td style="text-align:right;font-weight: bold"><?= number_format($openingbalane, 2, '.', ',') ?>
+                    </td>
+                    <td style="text-align:right;"></td>
+                    <td style="text-align:left;font-weight: bold"><?= number_format($renewalbalane, 2, '.', ',') ?></td>
+                    <td style="text-align:right"></td>
+                    <td style="text-align:right;"></td>
+                    <td style="text-align:right;font-weight: bold"><?= number_format($totalgross, 2, '.', ',') ?></td>
+                    <td style="text-align:right"></td>
+                    <td style="text-align:right;font-weight: bold"><?= number_format($totalcirculer, 2, '.', ',') ?>
+                    </td>
+                    <td style="text-align:right;font-weight: bold"><?= number_format($totalexciseduty, 2, '.', ',') ?>
+                    </td>
+                    <td style="text-align:right;font-weight: bold"><?= number_format($totaldeduction, 2, '.', ',') ?>
+                    </td>
+                    <td style="text-align:right;font-weight: bold"><?= number_format($totalnetinterest, 2, '.', ',') ?>
+                    </td>
+                    <td style="text-align:right;font-weight: bold"><?= number_format($totalnetamount, 2, '.', ',') ?>
+                    </td>
+                </tr>
+                <?php } ?>
+                <?php } ?>
+                <?php } ?>
+                <?php } ?>
+            </tbody>
+            <tbody role="rowgroup" style="font-family:arial;color: red !important;">
+                <tr role="row" style="font-family:arial;color: red !important;">
+                    <td colspan="4" style="text-align:right; padding-left: 10px;font-weight: bold"><span
+                            style="position: relative;right:65px;">Grand Total:</span> <span
+                            style="position: relative;right:10px;"><?= $grandtotal_g ?></span></td>
+                    <td style="color: red !important;text-align:left;font-weight: bold">
+                        <?= number_format($grandopeningbalane, 2, '.', ',') ?></td>
+                    <td style="color: red !important;text-align:left;"></td>
+                    <td style="color: red !important;text-align:left;font-weight: bold">
+                        <?= number_format($grandrenewalbalane, 2, '.', ',') ?></td>
+                    <td style="color: red !important;text-align:left"></td>
+                    <td style="color: red !important;text-align:left;"></td>
+                    <td style="color: red !important;text-align:left;font-weight: bold">
+                        <?= number_format($grandtotalgross, 2, '.', ',') ?></td>
+                    <td style="color: red !important;text-align:left"></td>
+                    <td style="color: red !important;text-align:left;font-weight: bold">
+                        <?= number_format($grandtotalcirculer, 2, '.', ',') ?></td>
+                    <td style="color: red !important;text-align:left;font-weight: bold">
+                        <?= number_format($grandtotalexciseduty, 2, '.', ',') ?></td>
+                    <td style="color: red !important;text-align:left;font-weight: bold">
+                        <?= number_format($grandtotaldeduction, 2, '.', ',') ?></td>
+                    <td style="color: red !important;text-align:left;font-weight: bold">
+                        <?= number_format($grandtotalnetinterest, 2, '.', ',') ?></td>
+                    <td style="color: red !important;text-align:left;font-weight: bold">
+                        <?= number_format($grandtotalnetamount, 2, '.', ',') ?></td>
+                </tr>
+            </tbody>
+        </table>
+        <div style="float: right; margin-top:2rem;">
+            <?php
+                $government = ($grandGovtRenPrinciple * 100) / $grandrenewalbalane;
+                $private = ($grandPrivtRenPrinciple * 100) / $grandrenewalbalane;
+                $nbfi = ($grandNBFIRenPrinciple * 100) / $grandrenewalbalane;
+                ?>
+            <table style="font-family:arial; width: 100%;">
+                <thead></thead>
+                <!--<tbody >-->
+                <?php foreach ($fdrbanktype as $banktype) { ?>
+                <?php if ($banktype->banktype == 'Government') { ?>
+                <tr>
+                    <td style="padding: 5px 20px;">Govt. Bank: </td>
+                    <td style="padding: 5px 20px;"><?= number_format($grandGovtRenPrinciple, 2, '.', ',') ?></td>
+                    <td style="padding: 5px 20px;"><?= number_format($government, 2, '.', ',') ?></td>
+                </tr>
+                <?php } ?>
+                <?php } ?>
+                <tr>
+                    <td style="padding: 5px 20px;color: red !important;text-align:left;font-weight: bold">Total
+                        Principle: </td>
+                    <td style="padding: 5px 20px;color: red !important;text-align:left;font-weight: bold">
+                        <?= number_format($grandrenewalbalane, 2, '.', ',') ?></td>
+                    <td style="padding: 5px 20px;color: red !important;text-align: left;font-weight: bold">100.00</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+        function printDi(printarea) {
+            document.getElementById("headerName").style.display = "none";
+            document.getElementById("printAndTitle").style.display = "none";
+            document.getElementById("tableHeader").style.display = "none";
+            var w = window.open();
+            w.document.write('<html><head><title></title>');
+            w.document.write('<script src="{{asset("/")}}public/js/polyfill.js">\x3C/script>');
+            w.document.write('<link rel="stylesheet" href="{{asset("/")}}public/css/report.css">');
+            w.document.write('</head><body>');
+            w.document.write(document.getElementById(printarea).innerHTML);
+            // w.document.write('<script type="text/javascript">addEventListener("load", ()=> {print(); close();})"\x3C/script>');
+            w.document.write('</body></html>');
+            w.document.close();
+            w.PagedConfig = {
+                auto: true,
+                after: (flow) => {
+                    w.print();
+                }
+            }
+            w.focus();
+            //        w.onafterprint = function(event){
+            //            w.location.href = "http://localhost/fa/searchfdr?type=F&fdate=&tdate="
+            //        }
+        }
+    </script>
+</body>
+
+</html>
+
+s
