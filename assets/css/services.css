@@ -182,7 +182,7 @@
 }
 
 .price-slider.com-slider.owl-theme .owl-nav [class*=owl-] {
-    top: -8%;
+    top: -50px;
 }
 
 .price-slider.com-slider.owl-theme .owl-nav [class*=owl-] {
@@ -675,7 +675,7 @@ cursor: default;
     object-position: center;
 }
 
-.goal-link .com-bor-btn:hover {
+.research-details-page .goal-link .com-bor-btn:hover {
     color: var(--btn-color);
 }
 
@@ -2553,6 +2553,76 @@ cursor: default;
     text-align: center;
     color: #000000;
     margin-top: 7px;
+}
+
+.all-service-details-page .question-reply {
+    margin-left: 40px;
+}
+
+.all-service-details-page .comment-s {
+    border: 1px solid #C7C0FF;
+}
+
+.btn-transparent {
+    background: transparent;
+}
+
+.research-details-page .goal-link {
+    display: flex;
+    gap: 20px;
+}
+
+.research-details-page .goal-link .modal-title {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 26px;
+    flex: 1;
+    text-align: center;
+}
+
+.research-details-page .goal-link .modal-header {
+    border: none;
+}
+
+.research-details-page .goal-link table th,
+.research-details-page .goal-link table td {
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.research-details-page .goal-link .table-bordered {
+    border: 1px solid #312783;
+}
+
+.research-details-page .goal-link .modal-dialog {
+    max-width: 875px;
+    margin: 1.75rem auto;
+}
+
+.research-details-page .goal-link .table-bordered>:not(caption)>* {
+    vertical-align: middle;
+}
+
+.research-details-page .goal-link td.institute {
+    max-width: 100%;
+    width: 375px;
+}
+
+.research-details-page .goal-link td.links {
+    max-width: 100%;
+    width: 180px;
+}
+
+.research-details-page .goal-link [class*="cmn-"] {
+    max-width: 190px;
+    padding: 8px 15px;
+    line-height: 20px;
+    height: auto;
+}
+
+.research-details-page .goal-link [class*="cmn-"]:hover {
+    background: #006633;
+    color: #fff;
 }
 
 @media (min-width: 320px) and (max-width: 991px) {
