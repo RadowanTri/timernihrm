@@ -250,7 +250,7 @@
                         <div class="live-navs-items mt-25">
                             <ul class="nav nav-tabs" id="myTab" role="tablist">
                                 <li class="nav-item " role="presentation">
-                                    <button class="nav-link " id="pricing-tab" data-bs-toggle="tab" data-bs-target="#pricing" type="button" role="tab" aria-controls="pricing" aria-selected="true">Pricing</button>
+                                    <button class="nav-link active" id="pricing-tab" data-bs-toggle="tab" data-bs-target="#pricing" type="button" role="tab" aria-controls="pricing" aria-selected="true">Pricing</button>
                                 </li>
                                 <li class="nav-item" role="presentation">
                                     <button class="nav-link" id="details-tab" data-bs-toggle="tab" data-bs-target="#details" type="button" role="tab" aria-controls="details" aria-selected="false">Details</button>
@@ -258,14 +258,30 @@
                                 <li class="nav-item" role="presentation">
                                     <button class="nav-link " id="process-tab" data-bs-toggle="tab" data-bs-target="#process" type="button" role="tab" aria-controls="process" aria-selected="false">Process</button>
                                 </li>
-                                <li class="nav-item" role="presentation">
-                                    <button class="nav-link active" id="roi-tab" data-bs-toggle="tab" data-bs-target="#roi" type="button" role="tab" aria-controls="roi" aria-selected="false">ROI Forecast</button>
+                                <li class="nav-item d-none" role="presentation">
+                                    <button class="nav-link" id="roi-tab" data-bs-toggle="tab" data-bs-target="#roi" type="button" role="tab" aria-controls="roi" aria-selected="false">ROI Forecast</button>
                                 </li>
                                 <li class="nav-item" role="presentation">
-                                    <button class="nav-link" id="review-tab" data-bs-toggle="tab" data-bs-target="#review" type="button" role="tab" aria-controls="review" aria-selected="false">Review</button>
+                                    <button class="nav-link" id="review-tab" data-bs-toggle="tab" data-bs-target="#review" type="button" role="tab" aria-controls="review" aria-selected="false">
+                                        <div class="review-ss d-flex gap-2">
+                                            Review
+                                            <p class="t-14">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star-half-alt"></i>
+                                                <span class="ms-1">(8)</span>
+                                            </p>
+                                        </div>
+                                        
+                                    </button>
                                 </li>
                                 <li class="nav-item" role="presentation">
-                                    <button class="nav-link" id="comment-tab" data-bs-toggle="tab" data-bs-target="#comment" type="button" role="tab" aria-controls="comment" aria-selected="false">Comment</button>
+                                    <button class="nav-link" id="comment-tab" data-bs-toggle="tab" data-bs-target="#comment" type="button" role="tab" aria-controls="comment" aria-selected="false">
+                                        Comment
+                                        <span class="ms-1">(8)</span> 
+                                    </button>
                                 </li>
                             </ul>
 
@@ -274,7 +290,7 @@
                 </div>
             </div>
             <div class="tab-content" id="myTabContent">
-                <div class="tab-pane fade " id="pricing" role="tabpanel" aria-labelledby="pricing-tab">
+                <div class="tab-pane fade  show active" id="pricing" role="tabpanel" aria-labelledby="pricing-tab">
                     <div class="mt-30 our-pricing">
                         <div class="container">
                             <div class="pricing-wrapper">
@@ -944,10 +960,42 @@
                         </div>
                     </div>
                 </div>
-                <div class="tab-pane fade show active" id="roi" role="tabpanel" aria-labelledby="roi-tab">
-                    roi
+                <div class="tab-pane fade d-none" id="roi" role="tabpanel" aria-labelledby="roi-tab">
+                    <div class="mt-30 roi-cc">
+                        <div class="container">
+                            <div class="comn-border-w pb-30">
+                                <div class="service-description-t">
+                                    <p class="t-14">
+                                        It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like.
+                                    </p>
+                                    <div class="row">
+                                        <div class="co-md-6">
+                                            <img src="assets/img/" alt="">
+                                        </div>
+                                    </div>
+                                   
+                                </div>
+                                <div class="forecast-pricing mb-10">
+                                    <div class="foi-bar">
+                                        <h3 class="foi-title">
+                                            Pricing & Forecast  
+                                        </h3>
+                                    </div>
+                                </div>
+                                
+                                <div class="forecast-grapic mb-10">
+                                    <div class="foi-bar">
+                                        <h3 class="foi-title">
+                                            Graphical Representation 
+                                        </h3>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="tab-pane fade" id="review" role="tabpanel" aria-labelledby="review-tab">
+                <div class="tab-pane fade " id="review" role="tabpanel" aria-labelledby="review-tab">
                     <div class="live-wrapper mt-30">
                         <div class="container">
                             <div class="review-wrappper">

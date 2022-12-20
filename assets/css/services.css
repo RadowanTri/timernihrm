@@ -2535,7 +2535,11 @@ cursor: default;
     margin-top: 5px;
 }
 
-.process-cc .service-description-t {
+.all-service-details-page .service-description-t {
+    padding: 15px 25px;
+}
+
+.all-service-details-page .padding-lr {
     padding: 15px 25px;
 }
 
@@ -2555,12 +2559,29 @@ cursor: default;
     margin-top: 7px;
 }
 
+.roi-cc .foi-bar {
+    padding: 10px 10px;
+    background: #312783;
+    text-align: center;
+}
+
+.roi-cc .foi-title {
+    font-weight: 500;
+    font-size: 17px;
+    color: #FFFFFF;
+}
+
 .all-service-details-page .question-reply {
     margin-left: 40px;
 }
 
 .all-service-details-page .comment-s {
     border: 1px solid #C7C0FF;
+}
+
+.all-service-details-page .review-ss p i {
+    color: #FCC573;
+    font-size: 12px;
 }
 
 .btn-transparent {
@@ -2637,9 +2658,9 @@ cursor: default;
         left: 40px;
     }
     .process-cc .timeline>li>.timeline-panel {
-        width: calc(100% - 90px);
-        width: -moz-calc(100% - 90px);
-        width: -webkit-calc(100% - 90px);
+        width: calc(100% - 50px);
+        width: -moz-calc(100% - 50px);
+        width: -webkit-calc(100% - 50px);
     }
     .process-cc .timeline>li>.timeline-badge {
         left: 15px;
