@@ -347,7 +347,7 @@ cursor: default;
     display: block;
     margin-top: 10px;
 }
-
+.all-service-details-page .monthly-cost .buy-now,
 .single-price-item .buy-now {
     font-size: 16px;
     display: block;
@@ -2908,6 +2908,14 @@ cursor: default;
     width: 60%;
     align-items: center;
     margin-left: auto;
+}
+.campaign-wrapper .campaign-tt{
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 12px;
+}
+.all-service-details-page .monthly-cost .buy-now{
+    display: inline-block;
 }
 @media (min-width: 320px) and (max-width: 991px) {
     .all-service-details-page .tab-title {
