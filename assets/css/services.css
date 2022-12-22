@@ -2477,6 +2477,8 @@ cursor: default;
     content: " ";
 }
 
+
+
 .process-cc .timeline>li>.timeline-badge {
     color: #fff;
     width: 40px;
@@ -2922,6 +2924,44 @@ cursor: default;
         font-size: 22px;
         line-height: 25px;
     }
+    .process-cc .timeline>li>.timeline-panel:before {
+        border-left-width: 0;
+        border-right-width: 15px;
+        left: -15px;
+        right: auto;
+    }
+    .process-cc .timeline>li>.timeline-panel:after {
+        border-left-width: 0;
+        border-right-width: 14px;
+        left: -14px;
+        right: auto;
+    }
+    .process-cc .timeline:before {
+        left: 8%;
+    }
+    .process-cc .timeline>li>.timeline-badge {
+        left: 5%;
+    }
+   
+    .process-cc .timeline>li>.timeline-panel ,
+    .process-cc .timeline>li.timeline-inverted>.timeline-panel {
+        float: left;
+        width: 80%;
+        margin-left: 10%;
+    }
+    .campaign-wrapper .campaign-tt {
+    font-size: 17px;
+        font-weight: 500;
+        margin-bottom: 12px;
+    }
+    .process-cc .process-title {
+        font-size: 20px;
+        line-height: 25px;
+
+    }
+
+
+
 }
 
 @media (max-width: 767px) {
