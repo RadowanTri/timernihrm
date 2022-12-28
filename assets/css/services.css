@@ -3094,6 +3094,18 @@ cursor: default;
     align-items: center;
     justify-content: center;
 }
+
+.cart-price .product-btn-t:hover .cart-svg path {
+    fill: #fff;
+}
+.cart-price .product-btn-t:hover .cart-svg:hover{
+    fill: #fff;
+}
+.cart-price .product-btn-t  .cart-svg {
+
+    display: inline-block;
+}
+  
 @media (min-width: 320px) and (max-width: 991px) {
     .t-16 {
         font-size: 14px;
