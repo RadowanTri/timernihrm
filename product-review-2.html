@@ -130,11 +130,28 @@
     <!-- header end -->
 
     <main class="product-page product-review-page">
+        <div class="cart-items">
+            <a href="checkout.html" class="cd-cart-trigger">
+                <div class="border-rr-c">
+                    <div class="cart-irm">
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M31.5292 7.11195C31.2437 6.57973 30.8348 6.13621 30.3425 5.82465C29.8501 5.51308 29.2911 5.34411 28.72 5.33422H7.56833L6.60989 1.31656C6.51306 0.928728 6.29702 0.587593 5.99695 0.348716C5.69689 0.109839 5.33049 -0.012705 4.95742 0.0010426H1.65247C1.21421 0.0010426 0.793897 0.188338 0.483998 0.521726C0.174099 0.855115 0 1.30729 0 1.77877C0 2.25025 0.174099 2.70242 0.483998 3.03581C0.793897 3.3692 1.21421 3.55649 1.65247 3.55649H3.70154L8.26237 21.796C8.3592 22.1838 8.57525 22.5249 8.87531 22.7638C9.17537 23.0027 9.54177 23.1252 9.91484 23.1115H24.7871C25.0923 23.1105 25.3912 23.0186 25.6508 22.846C25.9104 22.6734 26.1205 22.4269 26.2578 22.1337L31.6779 10.4718C31.9128 9.94211 32.0222 9.35805 31.9963 8.77178C31.9703 8.18551 31.8098 7.61527 31.5292 7.11195ZM23.7626 19.556H11.1707L8.47719 8.88967H28.72L23.7626 19.556Z" fill="white"/>
+                            <path d="M13.349 17.5L11.637 10.5H25.1988L21.7749 17.5H13.349Z" fill="white" stroke="#312783"/>
+                            <path d="M11.5168 32C12.8858 32 13.9955 30.8061 13.9955 29.3334C13.9955 27.8607 12.8858 26.6668 11.5168 26.6668C10.1478 26.6668 9.03809 27.8607 9.03809 29.3334C9.03809 30.8061 10.1478 32 11.5168 32Z" fill="white"/>
+                            <path d="M22.3635 32C23.7324 32 24.8422 30.8061 24.8422 29.3334C24.8422 27.8607 23.7324 26.6668 22.3635 26.6668C20.9945 26.6668 19.8848 27.8607 19.8848 29.3334C19.8848 30.8061 20.9945 32 22.3635 32Z" fill="white"/>
+                        </svg>
+                    </div>
+                    <ul class="count"> 
+                        <li>1</li>
+                    </ul>
+                </div>
+            </a>
+        </div>
 
         <section class="live-review pt-30">
             <div class="container">
                 <div class="live-hero">
-                    <div class="d-flex justify-content-between align-items-center gap-2">
+                    <div class="d-flex align-items-center gap-2">
                         <h4>E-commerce Website</h4>
                         <button class="product-btn">Live Demo</button>
                     </div>
@@ -151,10 +168,29 @@
                                 <button class="nav-link active" id="item-tab" data-bs-toggle="tab" data-bs-target="#item" type="button" role="tab" aria-controls="item" aria-selected="true">item</button>
                             </li>
                             <li class="nav-item" role="presentation">
-                                <button class="nav-link" id="review-tab" data-bs-toggle="tab" data-bs-target="#review" type="button" role="tab" aria-controls="review" aria-selected="false">review</button>
+                                <button class="nav-link" id="review-tab" data-bs-toggle="tab" data-bs-target="#review" type="button" role="tab" aria-controls="review" aria-selected="false">
+                                    <div class="review-ss d-flex gap-2">
+                                        Review
+                                        <p class="t-14">
+                                           <i class="fas fa-star"></i>
+                                           <i class="fas fa-star"></i>
+                                           <i class="fas fa-star"></i>
+                                           <i class="fas fa-star"></i>
+                                           <i class="fas fa-star-half-alt"></i>
+                                           <span class="ms-1">(8)</span>
+                                        </p>
+                                     </div>
+                                </button>
                             </li>
                             <li class="nav-item" role="presentation">
-                                <button class="nav-link " id="comment-tab" data-bs-toggle="tab" data-bs-target="#comment" type="button" role="tab" aria-controls="comment" aria-selected="false">comment</button>
+                                <button class="nav-link " id="comment-tab" data-bs-toggle="tab" data-bs-target="#comment" type="button" role="tab" aria-controls="comment" aria-selected="false">
+                                    <div class="review-ss d-flex gap-2">
+                                        Question
+                                        <p class="t-14">
+                                           <span>(8)</span>
+                                        </p>
+                                     </div>
+                                </button>
                             </li>
                         </ul>
 
@@ -303,120 +339,127 @@
 
                                             <button class="product-btn-t ms-2">
                                                     <img class="me-2" src="assets/img/service/carticon.png" alt="parrow">
-                                                    Buy Now
+                                                     Add To Cart
                                                 </button>
                                             <p class="f-size-14 pt-2">Price is in US dollars and excludes tax</p>
-                                            <div>
-
-                                                <!-- Button trigger modal -->
-                                                <button type="button" class="pt-2 customize  f-size-16 blue-color text-decoration-underline" data-bs-toggle="modal" data-bs-target="#moreFeature">
-                                                        Customize
+                                            <div class="buy-now-pr mt-3">
+                                                <div>
+                                                    <a href="dir-checkout.html" class=" customize  f-size-16 blue-color text-decoration-underline">
+                                                        Buy Now
+                                                    </a>
+                                                </div>
+                                                <span class="vartical-line"></span>
+                                                <div>
+                                                    <!-- Button trigger modal -->
+                                                    <button type="button" class="customize  f-size-16 blue-color text-decoration-underline" data-bs-toggle="modal" data-bs-target="#moreFeature">
+                                                            Customize
                                                     </button>
 
-                                                <!-- Modal -->
-                                                <div class="modal fade" id="moreFeature" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                                    <div class="modal-dialog customized-body">
-                                                        <div class="modal-content">
-                                                            <div class="modal-header justify-content-end">
+                                                    <!-- Modal -->
+                                                    <div class="modal fade" id="moreFeature" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                        <div class="modal-dialog customized-body">
+                                                            <div class="modal-content">
+                                                                <div class="modal-header justify-content-end">
 
-                                                                <button type="button" class="btn-transparent" data-bs-dismiss="modal" aria-label="Close">
-                                                                        <img src="assets/img/service/Cross.svg" alt="Cross">
-                                                                    </button>
-                                                            </div>
-                                                            <div class="modal-body ">
-                                                                <div class="grid-2">
-                                                                    <div class="single-price-item basic">
-                                                                        <div class="popular-item-h">
-                                                                            <h5>BASIC </h5>
-                                                                            <p>There are many variations of passages of Lorem Ipsum available.</p>
+                                                                    <button type="button" class="btn-transparent" data-bs-dismiss="modal" aria-label="Close">
+                                                                            <img src="assets/img/service/Cross.svg" alt="Cross">
+                                                                        </button>
+                                                                </div>
+                                                                <div class="modal-body ">
+                                                                    <div class="grid-2">
+                                                                        <div class="single-price-item basic">
+                                                                            <div class="popular-item-h">
+                                                                                <h5>BASIC </h5>
+                                                                                <p>There are many variations of passages of Lorem Ipsum available.</p>
+                                                                            </div>
+                                                                            <div class="price-item">
+                                                                                <h3>
+                                                                                    $49
+                                                                                </h3>
+                                                                                <h6>
+                                                                                    Contrary to popular belief.
+                                                                                </h6>
+                                                                            </div>
+                                                                            <div class="price-feature-item">
+                                                                                <ul>
+                                                                                    <li>
+                                                                                        Access to All Features
+                                                                                    </li>
+                                                                                    <li>1k lookups / per month</li>
+                                                                                    <li>30K API Credits / month</li>
+                                                                                    <li>10 Monitoring Quota</li>
+                                                                                    <li>60 minutes Monitoring intervel</li>
+                                                                                    <li>20% discount on backorders</li>
+                                                                                    <li>Domain Name Appraisal </li>
+                                                                                </ul>
+
+
+
+                                                                            </div>
+
                                                                         </div>
-                                                                        <div class="price-item">
-                                                                            <h3>
-                                                                                $49
-                                                                            </h3>
-                                                                            <h6>
-                                                                                Contrary to popular belief.
-                                                                            </h6>
+                                                                        <div class="feature-price-wrapper">
+                                                                            <div class="feature-price">
+
+                                                                                <div class="add-more-feature-ss">
+                                                                                    <h5> Add More Feature </h5>
+
+
+                                                                                </div>
+                                                                                <div class="add-more-feature-price">
+                                                                                    <h5>Price</h5>
+
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="item-select">
+                                                                                <div class="feature-price">
+                                                                                    <div class="form-check">
+                                                                                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                                                                                        <label class="form-check-label" for="flexRadioDefault1">
+                                                                                                Access to All Features
+                                                                                            </label>
+                                                                                    </div>
+                                                                                    <p>$20</p>
+                                                                                </div>
+                                                                                <div class="feature-price">
+                                                                                    <div class="form-check">
+                                                                                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                                                                                        <label class="form-check-label" for="flexRadioDefault1">
+                                                                                                Access to All Features
+                                                                                            </label>
+                                                                                    </div>
+                                                                                    <p>$20</p>
+                                                                                </div>
+                                                                                <div class="feature-price">
+                                                                                    <div class="form-check">
+                                                                                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                                                                                        <label class="form-check-label" for="flexRadioDefault1">
+                                                                                                Access to All Features
+                                                                                            </label>
+                                                                                    </div>
+                                                                                    <p>$20</p>
+                                                                                </div>
+
+
+                                                                            </div>
+
                                                                         </div>
-                                                                        <div class="price-feature-item">
-                                                                            <ul>
-                                                                                <li>
-                                                                                    Access to All Features
-                                                                                </li>
-                                                                                <li>1k lookups / per month</li>
-                                                                                <li>30K API Credits / month</li>
-                                                                                <li>10 Monitoring Quota</li>
-                                                                                <li>60 minutes Monitoring intervel</li>
-                                                                                <li>20% discount on backorders</li>
-                                                                                <li>Domain Name Appraisal </li>
-                                                                            </ul>
 
-
-
-                                                                        </div>
 
                                                                     </div>
-                                                                    <div class="feature-price-wrapper">
-                                                                        <div class="feature-price">
-
-                                                                            <div class="add-more-feature-ss">
-                                                                                <h5> Add More Feature </h5>
-
-
-                                                                            </div>
-                                                                            <div class="add-more-feature-price">
-                                                                                <h5>Price</h5>
-
-                                                                            </div>
+                                                                    <div class="grid-2-auto">
+                                                                        <div class="text-center">
+                                                                            <button class="buy-now ">Buy Now</button>
                                                                         </div>
-                                                                        <div class="item-select">
-                                                                            <div class="feature-price">
-                                                                                <div class="form-check">
-                                                                                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                                                                                    <label class="form-check-label" for="flexRadioDefault1">
-                                                                                            Access to All Features
-                                                                                        </label>
-                                                                                </div>
-                                                                                <p>$20</p>
-                                                                            </div>
-                                                                            <div class="feature-price">
-                                                                                <div class="form-check">
-                                                                                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                                                                                    <label class="form-check-label" for="flexRadioDefault1">
-                                                                                            Access to All Features
-                                                                                        </label>
-                                                                                </div>
-                                                                                <p>$20</p>
-                                                                            </div>
-                                                                            <div class="feature-price">
-                                                                                <div class="form-check">
-                                                                                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                                                                                    <label class="form-check-label" for="flexRadioDefault1">
-                                                                                            Access to All Features
-                                                                                        </label>
-                                                                                </div>
-                                                                                <p>$20</p>
-                                                                            </div>
-
-
+                                                                        <div class="total-price">
+                                                                            <h3>Total Prices : <span>$49</span> </h3>
                                                                         </div>
-
                                                                     </div>
 
 
                                                                 </div>
-                                                                <div class="grid-2-auto">
-                                                                    <div class="text-center">
-                                                                        <button class="buy-now ">Buy Now</button>
-                                                                    </div>
-                                                                    <div class="total-price">
-                                                                        <h3>Total Prices : <span>$49</span> </h3>
-                                                                    </div>
-                                                                </div>
-
 
                                                             </div>
-
                                                         </div>
                                                     </div>
                                                 </div>
@@ -533,120 +576,164 @@
                         </div>
                     </div>
                     <div class="tab-pane fade" id="review" role="tabpanel" aria-labelledby="review-tab">
+                        <div>
+                            <div class="container">
+                               <div class="review-wrappper row justify-content-center">
+                                  <div class="col-xl-10 col-md-12">
 
-                        <div class="review-wrappper">
-                            <div class="about-product-review pb-25">
-                                <h5 class="f-size-20 pb-1 border-b ">
-                                    Review
-                                </h5>
-
-                            </div>
-                            <div class="grid-280">
-                                <div class="nav scroll-bar flex-column nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-                                    <button class="nav-link active" id="v-pills-home-tab" data-bs-toggle="pill" data-bs-target="#v-pills-home" type="button" role="tab" aria-controls="v-pills-home" aria-selected="true">
-                                            <div class="review-icon-wrapper">
-                                                <div class="review-icon-img">
-                                                    <img src="assets/img/service/doctor.svg " alt="doctor ">
-                                                </div>
-                                            </div>
-                                            <p class="review-name">Hira Malok</p>
-                                        </button>
-                                    <button class="nav-link" id="v-pills-profile-tab" data-bs-toggle="pill" data-bs-target="#v-pills-profile" type="button" role="tab" aria-controls="v-pills-profile" aria-selected="false">
-                                            <div class="review-icon-wrapper">
-                                                <div class="review-icon-img">
-                                                    <img src="assets/img/service/doctor.svg " alt="doctor ">
-                                                </div>
-                                            </div>
-                                            <p class="review-name">Hira Malok</p>
-                                        </button>
-                                    <button class="nav-link" id="v-pills-messages-tab" data-bs-toggle="pill" data-bs-target="#v-pills-messages" type="button" role="tab" aria-controls="v-pills-messages" aria-selected="false">
-                                            <div class="review-icon-wrapper">
-                                                <div class="review-icon-img">
-                                                    <img src="assets/img/service/doctor.svg " alt="doctor ">
-                                                </div>
-                                            </div>
-                                            <p class="review-name">Hira Malok</p>
-                                        </button>
-                                    <button class="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill" data-bs-target="#v-pills-settings" type="button" role="tab" aria-controls="v-pills-settings" aria-selected="false">
-                                            <div class="review-icon-wrapper">
-                                                <div class="review-icon-img">
-                                                    <img src="assets/img/service/doctor.svg " alt="doctor ">
-                                                </div>
-                                            </div>
-                                            <p class="review-name">Hira Malok</p>
-                                        </button>
-                                </div>
-                                <div class="tab-content" id="v-pills-tabContent">
-                                    <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
-                                        <div class="reply-wrapper">
-                                            <h5 class="f-size-16 w-500">
-                                                It was a great experience !!!
-                                            </h5>
-                                            <div class="d-flex justify-content-between align-items-center my-3">
-                                                <p>
-                                                    <i class="fas fa-star"></i>
-                                                    <i class="fas fa-star"></i>
-                                                    <i class="fas fa-star"></i>
-                                                    <i class="fas fa-star"></i>
-                                                    <i class="fas fa-star-half-alt"></i>
-
-                                                </p>
-                                                <p class="f-size-14">
-                                                    <span class="dd-color">12/04/2021</span>
-                                                </p>
-                                            </div>
-                                            <div class="reply-content">
-                                                <p class="f-size-14">
-                                                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex
-                                                    ea commodo dolore te feugait nulla facilisi.
-                                                </p>
-                                                <p class="f-size-14">
-                                                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex
-                                                    ea commodo dolore te feugait nulla facilisi.
-                                                </p>
+                                    <div class=" d-flex align-items-start gap-2 mb-4">
+                                        <div class="review-icon-wrapper">
+                                            <div class="review-icon-img">
+                                                <img src="assets/img/service/doctor.svg " alt="doctor ">
                                             </div>
                                         </div>
-                                        <div class="reply-wrapper-a r-border my-3">
-                                            <a href="" class="s-reply-btn">Read More</a>
-                                            <div class="d-flex justify-content-between align-items-center my-3">
-                                                <h5 class="f-size-16 blue-color">
-                                                    Timerni
+                                        <div class="reply-wrapper">
+                                            <h5 class="f-size-16 rr-title">
+                                                Khaled Bin Walid
+                                            </h5>
+                                            <div class="d-flex justify-content-between align-items-center mt-1">
+                                                <p>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star-half-alt"></i>
+                                                </p>
+                                                <p class="f-size-14">
+                                                <span class="dd-color">12/04/2021</span>
+                                                </p>
+                                            </div>
+                                            <div class="reply-content border-bb mt-2">
+                                                <h5 class="f-size-16 w-500">
+                                                    It was a great experience !!!
                                                 </h5>
                                                 <p class="f-size-14">
-                                                    <span class="dd-color">12/04/2021</span>
+                                                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
+                                                diam nonummy nibh euismod tincidunt ut laoreet dolore magna
+                                                aliquam erat volutpat. Ut wisi enim ad minim veniam, quis
+                                                nostrud exerci tation ullamcorper suscipit lobortis nisl ut
+                                                aliquip ex
+                                                ea commodo dolore te feugait nulla facilisi.
+                                                </p>
+                                                <p class="f-size-14">
+                                                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
+                                                diam nonummy nibh euismod tincidunt ut laoreet dolore magna
+                                                aliquam erat volutpat. Ut wisi enim ad minim veniam, quis
+                                                nostrud exerci tation ullamcorper suscipit lobortis nisl ut
+                                                aliquip ex
+                                                ea commodo dolore te feugait nulla facilisi.
                                                 </p>
                                             </div>
-                                            <div class="reply-content border-bottom-0">
-                                                <p class="f-size-14">
-                                                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex
-                                                    ea commodo dolore te feugait nulla facilisi.
-                                                </p>
-
+                                        </div>  
+                                    </div>
+                                    <div class=" d-flex align-items-start gap-2 mb-4">
+                                        <div class="review-icon-wrapper">
+                                            <div class="review-icon-img">
+                                                <img src="assets/img/service/doctor.svg " alt="doctor ">
                                             </div>
                                         </div>
+                                        <div class="reply-wrapper">
+                                            <h5 class="f-size-16 rr-title">
+                                                Khaled Bin Walid
+                                            </h5>
+                                            <div class="d-flex justify-content-between align-items-center mt-1">
+                                                <p>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star-half-alt"></i>
+                                                </p>
+                                                <p class="f-size-14">
+                                                <span class="dd-color">12/04/2021</span>
+                                                </p>
+                                            </div>
+                                            <div class="reply-content border-bb mt-2">
+                                                <h5 class="f-size-16 w-500">
+                                                    It was a great experience !!!
+                                                </h5>
+                                                <p class="f-size-14">
+                                                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
+                                                diam nonummy nibh euismod tincidunt ut laoreet dolore magna
+                                                aliquam erat volutpat. Ut wisi enim ad minim veniam, quis
+                                                nostrud exerci tation ullamcorper suscipit lobortis nisl ut
+                                                aliquip ex
+                                                ea commodo dolore te feugait nulla facilisi.
+                                                </p>
+                                                <p class="f-size-14">
+                                                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
+                                                diam nonummy nibh euismod tincidunt ut laoreet dolore magna
+                                                aliquam erat volutpat. Ut wisi enim ad minim veniam, quis
+                                                nostrud exerci tation ullamcorper suscipit lobortis nisl ut
+                                                aliquip ex
+                                                ea commodo dolore te feugait nulla facilisi.
+                                                </p>
+                                            </div>
+                                        </div>  
                                     </div>
-                                    <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">...</div>
-                                    <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">...</div>
-                                    <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">...</div>
-                                </div>
+                                    <div class="mt-35 text-end">
+                                        <nav aria-label="Page navigation example">
+                                            <ul class="pagination justify-content-end">
+                                                <li class="page-item">
+                                                    <a class="page-link" href="#" aria-label="Previous">
+                                                        <span aria-hidden="true">
+                                                    <i class="fas fa-chevron-left"></i>
+                                                  </span>
+                                                    </a>
+                                                </li>
+                                                <li class="page-item"><a class="page-link active" href="#">1</a></li>
+                                                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                                <li class="page-item"><a class="page-link" href="#">4</a></li>
+                                                <li class="page-item"><a class="page-link" href="#">5</a></li>
+                
+                
+                                                <li class="page-item">
+                                                    <span>....</span>
+                                                </li>
+                                                <li class="page-item"><a class="page-link" href="#">50</a></li>
+                                                <li class="page-item">
+                                                    <a class="page-link active" href="#" aria-label="Next">
+                                                        <span aria-hidden="true">
+                                                    <i class="fas fa-chevron-right"></i>
+                                                  </span>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </nav>
+                                    </div>
+                                  </div>
+
+                               </div>
                             </div>
-                        </div>
+                         </div>
                     </div>
                     <div class="tab-pane fade" id="comment" role="tabpanel" aria-labelledby="comment-tab">
                         <div class="comment-wrapper">
                             <div class="about-product-review ">
-                                <h5 class="f-size-20 pb-1 border-b ">
+                                <h5 class="f-size-20 pb-3">
                                     Ask a Question/Comments
                                 </h5>
                                 <form action="" class="comment-form">
                                     <div class="text-comment position-relative">
                                         <textarea name="" class="form-control" placeholder="Write to comment"></textarea>
-                                        <div class="text-end mt-10">
-                                            <button type="submit" class="product-btn text-end">Comment</button>
+                                        <div class="text-end mt-2">
+                                            <button type="submit" class="product-btn d-inline-block">
+                                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M16 7.50649C15.9036 5.94807 15.3528 4.45189 14.4155 3.20241C13.4783 1.95294 12.1955 1.00479 10.7254 0.474856C9.25527 -0.0550793 7.66206 -0.143633 6.14217 0.220111C4.62228 0.583855 3.24216 1.384 2.17195 2.52189C1.10174 3.65979 0.388228 5.08569 0.119375 6.62381C-0.149478 8.16194 0.0380816 9.74504 0.658932 11.178C1.27978 12.6109 2.30678 13.831 3.61332 14.6878C4.91986 15.5447 6.44882 16.0008 8.01171 16H12.6668C13.5506 15.9991 14.3979 15.648 15.0228 15.0237C15.6477 14.3994 15.9991 13.5529 16 12.67V7.50649ZM14.6667 12.67C14.6667 13.1999 14.456 13.7081 14.081 14.0828C13.7059 14.4575 13.1972 14.668 12.6668 14.668H8.01171C7.07104 14.6676 6.14103 14.4691 5.2823 14.0855C4.42358 13.7018 3.65543 13.1417 3.02794 12.4416C2.39742 11.7418 1.92395 10.9154 1.63927 10.0178C1.35459 9.12028 1.26529 8.17229 1.37735 7.23743C1.5543 5.76286 2.21744 4.38907 3.26223 3.33262C4.30701 2.27616 5.67402 1.59714 7.14775 1.4026C7.43523 1.3666 7.72465 1.34836 8.01438 1.34799C9.56795 1.34375 11.0734 1.88605 12.2668 2.87979C12.9638 3.4585 13.5359 4.1726 13.9484 4.97877C14.361 5.78495 14.6053 6.66643 14.6667 7.56976V12.67Z" fill="white"/>
+                                                    <path d="M5.33363 6.00973H8.00017C8.17697 6.00973 8.34653 5.93957 8.47155 5.81467C8.59657 5.68977 8.6668 5.52037 8.6668 5.34373C8.6668 5.1671 8.59657 4.9977 8.47155 4.8728C8.34653 4.7479 8.17697 4.67773 8.00017 4.67773H5.33363C5.15682 4.67773 4.98726 4.7479 4.86225 4.8728C4.73723 4.9977 4.66699 5.1671 4.66699 5.34373C4.66699 5.52037 4.73723 5.68977 4.86225 5.81467C4.98726 5.93957 5.15682 6.00973 5.33363 6.00973Z" fill="white"/>
+                                                    <path d="M10.6667 7.34229H5.33363C5.15682 7.34229 4.98726 7.41245 4.86225 7.53735C4.73723 7.66225 4.66699 7.83165 4.66699 8.00829C4.66699 8.18492 4.73723 8.35433 4.86225 8.47923C4.98726 8.60413 5.15682 8.67429 5.33363 8.67429H10.6667C10.8435 8.67429 11.0131 8.60413 11.1381 8.47923C11.2631 8.35433 11.3333 8.18492 11.3333 8.00829C11.3333 7.83165 11.2631 7.66225 11.1381 7.53735C11.0131 7.41245 10.8435 7.34229 10.6667 7.34229Z" fill="white"/>
+                                                    <path d="M10.6667 10.0061H5.33363C5.15682 10.0061 4.98726 10.0763 4.86225 10.2012C4.73723 10.3261 4.66699 10.4955 4.66699 10.6721C4.66699 10.8487 4.73723 11.0181 4.86225 11.143C4.98726 11.2679 5.15682 11.3381 5.33363 11.3381H10.6667C10.8435 11.3381 11.0131 11.2679 11.1381 11.143C11.2631 11.0181 11.3333 10.8487 11.3333 10.6721C11.3333 10.4955 11.2631 10.3261 11.1381 10.2012C11.0131 10.0763 10.8435 10.0061 10.6667 10.0061Z" fill="white"/>
+                                                 </svg>
+                                                   <span class="ms-1">
+
+                                                       Comment
+                                                   </span> 
+                                            </button>
 
                                         </div>
                                     </div>
-                                    <div class="position-relative d-none">
+                                    <div class="position-relative">
                                         <div class="comment-s d-flex align-items-start  gap-3 my-3">
                                             <div class="review-icon-wrapper">
                                                 <div class="review-icon-img">
@@ -668,8 +755,14 @@
                                                         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minus, libero eveniet. Dolores modi deserunt esse provident libero, fugit expedita ipsa, quis officiis sit doloremque voluptate vero sed
                                                             tenetur odit rerum?</p>
                                                         <button class="product-btn mt-10">
+                                                            <svg width="16" height="12" viewBox="0 0 16 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                <path d="M15.3342 12C15.1574 12 14.9879 11.9386 14.8628 11.8293C14.7378 11.7199 14.6676 11.5717 14.6676 11.4171C14.6665 10.4897 14.2447 9.60064 13.4948 8.94492C12.7449 8.28919 11.7281 7.9204 10.6676 7.91947H6.78091V8.844C6.78085 9.07455 6.70262 9.29991 6.55611 9.49159C6.4096 9.68327 6.20138 9.83267 5.95778 9.92089C5.71418 10.0091 5.44614 10.0322 5.18753 9.98723C4.92893 9.94227 4.69138 9.83127 4.50491 9.66827L0.585573 6.24121C0.210631 5.91326 0 5.46853 0 5.00481C0 4.54109 0.210631 4.09636 0.585573 3.76841L4.50491 0.34135C4.69138 0.178351 4.92893 0.0673533 5.18753 0.0223887C5.44614 -0.0225759 5.71418 0.000511653 5.95778 0.0887327C6.20138 0.176954 6.4096 0.326347 6.55611 0.518027C6.70262 0.709707 6.78085 0.935067 6.78091 1.16562V2.09015H10.0009C11.5917 2.09169 13.1168 2.64493 14.2416 3.62848C15.3664 4.61204 15.9991 5.94558 16.0009 7.33654V11.4171C16.0009 11.5717 15.9307 11.7199 15.8056 11.8293C15.6806 11.9386 15.5111 12 15.3342 12ZM5.44757 1.16562L1.52824 4.59268C1.40326 4.70199 1.33305 4.85024 1.33305 5.00481C1.33305 5.15938 1.40326 5.30763 1.52824 5.41694L5.44757 8.844V7.33654C5.44757 7.18194 5.51781 7.03367 5.64284 6.92435C5.76786 6.81502 5.93743 6.75361 6.11424 6.75361H10.6676C11.4246 6.75341 12.173 6.89443 12.8628 7.16725C13.5526 7.44007 14.1679 7.83841 14.6676 8.33569V7.33654C14.6662 6.2547 14.174 5.21751 13.2992 4.45253C12.4243 3.68755 11.2382 3.25725 10.0009 3.25601H6.11424C5.93743 3.25601 5.76786 3.1946 5.64284 3.08528C5.51781 2.97595 5.44757 2.82768 5.44757 2.67308V1.16562Z" fill="white"/>
+                                                            </svg>
+                                                            <span class="ms-1">
                                                                 Reply
-                                                            </button>
+                                                            </span>
+                                                                  
+                                                        </button>
                                                     </div>
 
                                                 </div>
@@ -698,8 +791,14 @@
                                                     <div>
                                                         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minus, libero eveniet. Dolores modi deserunt esse provident libero, fugit expedita ipsa, quis officiis sit doloremque voluptate vero sed
                                                             tenetur odit rerum?</p>
-                                                        <button class="product-btn mt-10">
-                                                                Reply
+                                                            <button class="product-btn mt-10">
+                                                                <svg width="16" height="12" viewBox="0 0 16 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                    <path d="M15.3342 12C15.1574 12 14.9879 11.9386 14.8628 11.8293C14.7378 11.7199 14.6676 11.5717 14.6676 11.4171C14.6665 10.4897 14.2447 9.60064 13.4948 8.94492C12.7449 8.28919 11.7281 7.9204 10.6676 7.91947H6.78091V8.844C6.78085 9.07455 6.70262 9.29991 6.55611 9.49159C6.4096 9.68327 6.20138 9.83267 5.95778 9.92089C5.71418 10.0091 5.44614 10.0322 5.18753 9.98723C4.92893 9.94227 4.69138 9.83127 4.50491 9.66827L0.585573 6.24121C0.210631 5.91326 0 5.46853 0 5.00481C0 4.54109 0.210631 4.09636 0.585573 3.76841L4.50491 0.34135C4.69138 0.178351 4.92893 0.0673533 5.18753 0.0223887C5.44614 -0.0225759 5.71418 0.000511653 5.95778 0.0887327C6.20138 0.176954 6.4096 0.326347 6.55611 0.518027C6.70262 0.709707 6.78085 0.935067 6.78091 1.16562V2.09015H10.0009C11.5917 2.09169 13.1168 2.64493 14.2416 3.62848C15.3664 4.61204 15.9991 5.94558 16.0009 7.33654V11.4171C16.0009 11.5717 15.9307 11.7199 15.8056 11.8293C15.6806 11.9386 15.5111 12 15.3342 12ZM5.44757 1.16562L1.52824 4.59268C1.40326 4.70199 1.33305 4.85024 1.33305 5.00481C1.33305 5.15938 1.40326 5.30763 1.52824 5.41694L5.44757 8.844V7.33654C5.44757 7.18194 5.51781 7.03367 5.64284 6.92435C5.76786 6.81502 5.93743 6.75361 6.11424 6.75361H10.6676C11.4246 6.75341 12.173 6.89443 12.8628 7.16725C13.5526 7.44007 14.1679 7.83841 14.6676 8.33569V7.33654C14.6662 6.2547 14.174 5.21751 13.2992 4.45253C12.4243 3.68755 11.2382 3.25725 10.0009 3.25601H6.11424C5.93743 3.25601 5.76786 3.1946 5.64284 3.08528C5.51781 2.97595 5.44757 2.82768 5.44757 2.67308V1.16562Z" fill="white"/>
+                                                                </svg>
+                                                                <span class="ms-1">
+                                                                    Reply
+                                                                </span>
+                                                                      
                                                             </button>
                                                     </div>
 
@@ -725,8 +824,14 @@
                                                                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minus, libero eveniet. Dolores modi deserunt esse provident libero, fugit expedita ipsa, quis officiis sit doloremque voluptate vero
                                                                     sed tenetur odit rerum?</p>
                                                                 <button class="product-btn mt-10">
+                                                                    <svg width="16" height="12" viewBox="0 0 16 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                        <path d="M15.3342 12C15.1574 12 14.9879 11.9386 14.8628 11.8293C14.7378 11.7199 14.6676 11.5717 14.6676 11.4171C14.6665 10.4897 14.2447 9.60064 13.4948 8.94492C12.7449 8.28919 11.7281 7.9204 10.6676 7.91947H6.78091V8.844C6.78085 9.07455 6.70262 9.29991 6.55611 9.49159C6.4096 9.68327 6.20138 9.83267 5.95778 9.92089C5.71418 10.0091 5.44614 10.0322 5.18753 9.98723C4.92893 9.94227 4.69138 9.83127 4.50491 9.66827L0.585573 6.24121C0.210631 5.91326 0 5.46853 0 5.00481C0 4.54109 0.210631 4.09636 0.585573 3.76841L4.50491 0.34135C4.69138 0.178351 4.92893 0.0673533 5.18753 0.0223887C5.44614 -0.0225759 5.71418 0.000511653 5.95778 0.0887327C6.20138 0.176954 6.4096 0.326347 6.55611 0.518027C6.70262 0.709707 6.78085 0.935067 6.78091 1.16562V2.09015H10.0009C11.5917 2.09169 13.1168 2.64493 14.2416 3.62848C15.3664 4.61204 15.9991 5.94558 16.0009 7.33654V11.4171C16.0009 11.5717 15.9307 11.7199 15.8056 11.8293C15.6806 11.9386 15.5111 12 15.3342 12ZM5.44757 1.16562L1.52824 4.59268C1.40326 4.70199 1.33305 4.85024 1.33305 5.00481C1.33305 5.15938 1.40326 5.30763 1.52824 5.41694L5.44757 8.844V7.33654C5.44757 7.18194 5.51781 7.03367 5.64284 6.92435C5.76786 6.81502 5.93743 6.75361 6.11424 6.75361H10.6676C11.4246 6.75341 12.173 6.89443 12.8628 7.16725C13.5526 7.44007 14.1679 7.83841 14.6676 8.33569V7.33654C14.6662 6.2547 14.174 5.21751 13.2992 4.45253C12.4243 3.68755 11.2382 3.25725 10.0009 3.25601H6.11424C5.93743 3.25601 5.76786 3.1946 5.64284 3.08528C5.51781 2.97595 5.44757 2.82768 5.44757 2.67308V1.16562Z" fill="white"/>
+                                                                    </svg>
+                                                                    <span class="ms-1">
                                                                         Reply
-                                                                    </button>
+                                                                    </span>
+                                                                            
+                                                                </button>
                                                             </div>
 
                                                         </div>
@@ -740,126 +845,7 @@
 
                                         </div>
                                     </div>
-                                    <div class="position-relative mt-3">
-                                        <div class="comment-s mb-3">
-
-                                            <div class="write-question  mb-3">
-                                                <div class="write-r">
-                                                    <div class="question q-box">
-                                                        <i class="fas fa-question"></i>
-                                                    </div>
-
-                                                </div>
-                                                <div class=" d-flex align-items-start  gap-2 ">
-                                                    <div class="review-icon-wrapper">
-                                                        <div class="review-icon-img">
-                                                            <img src="assets/img/service/doctor.svg " alt="doctor ">
-                                                        </div>
-                                                    </div>
-                                                    <div>
-                                                        <div class="comment-content ">
-                                                            <div class="d-flex  justify-content-between align-items-start height-50">
-
-                                                                <h5 class="f-size-16 blue-color">
-                                                                    Timerni
-                                                                </h5>
-                                                                <p class="f-size-14">
-                                                                    <span class="dd-color">12/04/2021</span>
-                                                                </p>
-                                                            </div>
-                                                            <div>
-                                                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minus, libero eveniet. Dolores modi deserunt esse provident libero, fugit expedita ipsa, quis officiis sit doloremque voluptate vero
-                                                                    sed tenetur odit rerum?</p>
-
-                                                            </div>
-
-                                                        </div>
-
-                                                    </div>
-
-
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="comment-s mb-3">
-                                            <div class="write-question  mb-3">
-                                                <div class="write-r">
-                                                    <div class="question q-box">
-                                                        <i class="fas fa-question"></i>
-                                                    </div>
-
-                                                </div>
-                                                <div class=" d-flex align-items-start  gap-2 ">
-                                                    <div class="review-icon-wrapper">
-                                                        <div class="review-icon-img">
-                                                            <img src="assets/img/service/doctor.svg " alt="doctor ">
-                                                        </div>
-                                                    </div>
-                                                    <div>
-                                                        <div class="comment-content ">
-                                                            <div class="d-flex  justify-content-between align-items-start height-50">
-
-                                                                <h5 class="f-size-16 blue-color">
-                                                                    Timerni
-                                                                </h5>
-                                                                <p class="f-size-14">
-                                                                    <span class="dd-color">12/04/2021</span>
-                                                                </p>
-                                                            </div>
-                                                            <div>
-                                                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minus, libero eveniet. Dolores modi deserunt esse provident libero, fugit expedita ipsa, quis officiis sit doloremque voluptate vero
-                                                                    sed tenetur odit rerum?</p>
-
-                                                            </div>
-
-                                                        </div>
-
-                                                    </div>
-
-
-                                                </div>
-                                            </div>
-                                            <div class="write-question">
-                                                <div class="write-r">
-                                                    <div class="question r-box">
-                                                        <i class="fas fa-reply"></i>
-                                                    </div>
-
-                                                </div>
-                                                <div class=" d-flex align-items-start  gap-2 ">
-                                                    <div class="review-icon-wrapper">
-                                                        <div class="review-icon-img">
-                                                            <img src="assets/img/service/doctor.svg " alt="doctor ">
-                                                        </div>
-                                                    </div>
-                                                    <div>
-                                                        <div class="comment-content ">
-                                                            <div class="d-flex  justify-content-between align-items-start height-50">
-
-                                                                <h5 class="f-size-16 blue-color">
-                                                                    Timerni
-                                                                </h5>
-                                                                <p class="f-size-14">
-                                                                    <span class="dd-color">12/04/2021</span>
-                                                                </p>
-                                                            </div>
-                                                            <div>
-                                                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minus, libero eveniet. Dolores modi deserunt esse provident libero, fugit expedita ipsa, quis officiis sit doloremque voluptate vero
-                                                                    sed tenetur odit rerum?</p>
-
-                                                            </div>
-
-                                                        </div>
-
-                                                    </div>
-
-
-                                                </div>
-                                            </div>
-                                        </div>
-
-
-                                    </div>
+                                   
 
                                 </form>
 
@@ -875,7 +861,7 @@
             <div class="container">
                 <div class="heading text-center">
                     <h2 class="s-heading-2">
-                        Hot Deals !!! <span class="s-sub-c">Products</span>
+                        Hot Deals <span class="s-sub-c">!!! </span>
                     </h2>
                 </div>
 
@@ -886,406 +872,213 @@
                     <img class="pattern-2" src="assets/img/service/pattern.png" alt="pattern">
 
                 </div>
-                <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <div class="container">
-                                <div class="row justify-content-center  pt-40">
-                                    <div class="col-md-6 col-lg-6 col-xl-4 mb-3">
-                                        <div class="product-items">
-                                            <div class="product-slider-items">
-                                                <div class="product-img-s product-img-slider owl-carousel  owl-theme">
-                                                    <div class="position-relative ">
+                <div class="container">
+                    <div class="row justify-content-center  pt-40">
 
-                                                        <div class="offer-slide-img">
-                                                            <div class="offer-price">
-                                                                <div class="offer-img">
-                                                                    <img src="assets/img/service/offer.png" alt="offer">
-                                                                    <div class="offer-title">
-                                                                        <h3>
-                                                                            37 <span class="sub">%</span>
-                                                                        </h3>
-                                                                        <h4>OFF</h4>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                            <img src="assets/img/service/website1.png" loading="lazy" alt="website1">
-                                                        </div>
-                                                    </div>
-                                                    <div class="position-relative ">
+                        <div class="col-md-6 col-lg-6 col-xl-4 mb-3">
+                            <div class="product-items">
+                                <div class="product-slider-items">
+                                    <div class="product-img-s product-img-slider owl-carousel  owl-theme">
+                                        <div class="position-relative ">
 
-                                                        <div class="offer-slide-img">
-                                                            <div class="offer-price">
-                                                                <div class="offer-img">
-                                                                    <img src="assets/img/service/offer.png" alt="offer">
-                                                                    <div class="offer-title">
-                                                                        <h3>
-                                                                            37 <span class="sub">%</span>
-                                                                        </h3>
-                                                                        <h4>OFF</h4>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                            <img src="assets/img/service/website1.png" loading="lazy" alt="website1">
+                                            <div class="offer-slide-img">
+                                                <div class="offer-price">
+                                                    <div class="offer-img">
+                                                        <img src="assets/img/service/offer.png" alt="offer">
+                                                        <div class="offer-title">
+                                                            <h3>
+                                                                37 <span class="sub">%</span>
+                                                            </h3>
+                                                            <h4>OFF</h4>
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <div class="product-slider-items-content">
-                                                    <h5 class="f-size-16 black-f">E-commerce Website</h5>
-                                                    <div class="product-price-item">
+                                                <img src="assets/img/service/website1.png" loading="lazy" alt="website1">
+                                            </div>
+                                        </div>
+                                        <div class="position-relative ">
 
-                                                        <div class="p-price  mt-15">
-                                                            <div class="price-review">
-                                                                <h5 class="price-title mb-1">
-                                                                    $300
-                                                                    <span class="f-size-16 ms-1"><del>$500</del></span>
-
-                                                                </h5>
-                                                                <p>
-                                                                    <i class="fas fa-star "></i>
-                                                                    <i class="fas fa-star "></i>
-                                                                    <i class="fas fa-star "></i>
-                                                                    <i class="fas fa-star "></i>
-                                                                    <span class="ms-1 f-size-16 ">(8)</span>
-                                                                </p>
-                                                            </div>
-                                                            <div class="cart-price  d-flex  d-flex">
-                                                                <button class="product-btn-t ">
-                                                                <img src="assets/img/service/carticon.png " alt="carticon ">
-                                                            </button>
-                                                                <button class="product-btn-t ms-2 ">
-                                                                View details
-                                                                <img class="ms-2 " src="assets/img/service/parrow.png " alt="parrow ">
-                                                            </button>
-                                                            </div>
+                                            <div class="offer-slide-img">
+                                                <div class="offer-price">
+                                                    <div class="offer-img">
+                                                        <img src="assets/img/service/offer.png" alt="offer">
+                                                        <div class="offer-title">
+                                                            <h3>
+                                                                37 <span class="sub">%</span>
+                                                            </h3>
+                                                            <h4>OFF</h4>
                                                         </div>
-
-
                                                     </div>
                                                 </div>
+                                                <img src="assets/img/service/website1.png" loading="lazy" alt="website1">
+                                            </div>
+                                        </div>
+                                        <div class="position-relative ">
+
+                                            <div class="offer-slide-img">
+                                                <div class="offer-price">
+                                                    <div class="offer-img">
+                                                        <img src="assets/img/service/offer.png" alt="offer">
+                                                        <div class="offer-title">
+                                                            <h3>
+                                                                37 <span class="sub">%</span>
+                                                            </h3>
+                                                            <h4>OFF</h4>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <img src="assets/img/service/website1.png" loading="lazy" alt="website1">
                                             </div>
                                         </div>
                                     </div>
-                                    <!-- col-md-6 col-lg-6 col-xl-4 mb-3 End -->
-                                    <div class="col-md-6 col-lg-6 col-xl-4 mb-3">
-                                        <div class="product-items">
-                                            <div class="product-slider-items">
-                                                <div class="product-img-s product-img-slider owl-carousel  owl-theme">
-                                                    <div class="position-relative ">
+                                    <div class="product-slider-items-content">
+                                        <h5 class="f-size-16 black-f">E-commerce Website</h5>
+                                        <div class="product-price-item">
 
-                                                        <div class="offer-slide-img">
-                                                            <div class="offer-price">
-                                                                <div class="offer-img">
-                                                                    <img src="assets/img/service/offer.png" alt="offer">
-                                                                    <div class="offer-title">
-                                                                        <h3>
-                                                                            37 <span class="sub">%</span>
-                                                                        </h3>
-                                                                        <h4>OFF</h4>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                            <img src="assets/img/service/website1.png" loading="lazy" alt="website1">
-                                                        </div>
-                                                    </div>
-                                                    <div class="position-relative ">
+                                            <div class="p-price  mt-15">
+                                                <div class="price-review">
+                                                    <h5 class="price-title mb-1">
+                                                        $300
+                                                        <span class="f-size-16 ms-1"><del>$500</del></span>
 
-                                                        <div class="offer-slide-img">
-                                                            <div class="offer-price">
-                                                                <div class="offer-img">
-                                                                    <img src="assets/img/service/offer.png" alt="offer">
-                                                                    <div class="offer-title">
-                                                                        <h3>
-                                                                            37 <span class="sub">%</span>
-                                                                        </h3>
-                                                                        <h4>OFF</h4>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                            <img src="assets/img/service/website1.png" loading="lazy" alt="website1">
-                                                        </div>
-                                                    </div>
-                                                    <div class="position-relative ">
-
-                                                        <div class="offer-slide-img">
-                                                            <div class="offer-price">
-                                                                <div class="offer-img">
-                                                                    <img src="assets/img/service/offer.png" alt="offer">
-                                                                    <div class="offer-title">
-                                                                        <h3>
-                                                                            37 <span class="sub">%</span>
-                                                                        </h3>
-                                                                        <h4>OFF</h4>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                            <img src="assets/img/service/website1.png" loading="lazy" alt="website1">
-                                                        </div>
-                                                    </div>
+                                                    </h5>
+                                                    <p>
+                                                        <i class="fas fa-star "></i>
+                                                        <i class="fas fa-star "></i>
+                                                        <i class="fas fa-star "></i>
+                                                        <i class="fas fa-star "></i>
+                                                        <span class="ms-1 f-size-16 ">(8)</span>
+                                                    </p>
                                                 </div>
-                                                <div class="product-slider-items-content">
-                                                    <h5 class="f-size-16 black-f">E-commerce Website</h5>
-                                                    <div class="product-price-item">
-
-                                                        <div class="p-price  mt-15">
-                                                            <div class="price-review">
-                                                                <h5 class="price-title mb-1">
-                                                                    $300
-                                                                    <span class="f-size-16 ms-1"><del>$500</del></span>
-
-                                                                </h5>
-                                                                <p>
-                                                                    <i class="fas fa-star "></i>
-                                                                    <i class="fas fa-star "></i>
-                                                                    <i class="fas fa-star "></i>
-                                                                    <i class="fas fa-star "></i>
-                                                                    <span class="ms-1 f-size-16 ">(8)</span>
-                                                                </p>
-                                                            </div>
-                                                            <div class="cart-price  d-flex  d-flex">
-                                                                <button class="product-btn-t ">
-                                                                <img src="assets/img/service/carticon.png " alt="carticon ">
-                                                            </button>
-                                                                <button class="product-btn-t ms-2 ">
-                                                                View details
-                                                                <img class="ms-2 " src="assets/img/service/parrow.png " alt="parrow ">
-                                                            </button>
-                                                            </div>
-                                                        </div>
-
-
-                                                    </div>
+                                                <div class="cart-price  d-flex  d-flex">
+                                                    <button class="product-btn-t ">
+                                                    <img src="assets/img/service/carticon.png " alt="carticon ">
+                                                </button>
+                                                <a href="product-review-2.html" class="product-btn-t ms-2">
+                                                    View details
+                                                    <i class="fas fa-arrow-right ms-1"></i>
+                                                </a>
                                                 </div>
                                             </div>
+
+
                                         </div>
                                     </div>
-                                    <!-- col-md-6 col-lg-6 col-xl-4 mb-3 End -->
-
                                 </div>
                             </div>
                         </div>
-                        <!-- carousel-item End -->
-                        <div class="carousel-item">
-                            <div class="container">
-                                <div class="row justify-content-center  pt-40">
+                        <!-- col-md-6 col-lg-6 col-xl-4 mb-3 End -->
+                        <div class="col-md-6 col-lg-6 col-xl-4 mb-3">
+                            <div class="product-items">
+                                <div class="product-slider-items">
+                                    <div class="product-img-s product-img-slider owl-carousel  owl-theme">
+                                        <div class="position-relative ">
 
-                                    <div class="col-md-6 col-lg-6 col-xl-4 mb-3">
-                                        <div class="product-items">
-                                            <div class="product-slider-items">
-                                                <div class="product-img-s product-img-slider owl-carousel  owl-theme">
-                                                    <div class="position-relative ">
-
-                                                        <div class="offer-slide-img">
-                                                            <div class="offer-price">
-                                                                <div class="offer-img">
-                                                                    <img src="assets/img/service/offer.png" alt="offer">
-                                                                    <div class="offer-title">
-                                                                        <h3>
-                                                                            37 <span class="sub">%</span>
-                                                                        </h3>
-                                                                        <h4>OFF</h4>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                            <img src="assets/img/service/website1.png" loading="lazy" alt="website1">
-                                                        </div>
-                                                    </div>
-                                                    <div class="position-relative ">
-
-                                                        <div class="offer-slide-img">
-                                                            <div class="offer-price">
-                                                                <div class="offer-img">
-                                                                    <img src="assets/img/service/offer.png" alt="offer">
-                                                                    <div class="offer-title">
-                                                                        <h3>
-                                                                            37 <span class="sub">%</span>
-                                                                        </h3>
-                                                                        <h4>OFF</h4>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                            <img src="assets/img/service/website1.png" loading="lazy" alt="website1">
-                                                        </div>
-                                                    </div>
-                                                    <div class="position-relative ">
-
-                                                        <div class="offer-slide-img">
-                                                            <div class="offer-price">
-                                                                <div class="offer-img">
-                                                                    <img src="assets/img/service/offer.png" alt="offer">
-                                                                    <div class="offer-title">
-                                                                        <h3>
-                                                                            37 <span class="sub">%</span>
-                                                                        </h3>
-                                                                        <h4>OFF</h4>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                            <img src="assets/img/service/website1.png" loading="lazy" alt="website1">
+                                            <div class="offer-slide-img">
+                                                <div class="offer-price">
+                                                    <div class="offer-img">
+                                                        <img src="assets/img/service/offer.png" alt="offer">
+                                                        <div class="offer-title">
+                                                            <h3>
+                                                                37 <span class="sub">%</span>
+                                                            </h3>
+                                                            <h4>OFF</h4>
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <div class="product-slider-items-content">
-                                                    <h5 class="f-size-16 black-f">E-commerce Website</h5>
-                                                    <div class="product-price-item">
+                                                <img src="assets/img/service/website1.png" loading="lazy" alt="website1">
+                                            </div>
+                                        </div>
+                                        <div class="position-relative ">
 
-                                                        <div class="p-price  mt-15">
-                                                            <div class="price-review">
-                                                                <h5 class="price-title mb-1">
-                                                                    $300
-                                                                    <span class="f-size-16 ms-1"><del>$500</del></span>
-
-                                                                </h5>
-                                                                <p>
-                                                                    <i class="fas fa-star "></i>
-                                                                    <i class="fas fa-star "></i>
-                                                                    <i class="fas fa-star "></i>
-                                                                    <i class="fas fa-star "></i>
-                                                                    <span class="ms-1 f-size-16 ">(8)</span>
-                                                                </p>
-                                                            </div>
-                                                            <div class="cart-price  d-flex  d-flex">
-                                                                <button class="product-btn-t ">
-                                                                <img src="assets/img/service/carticon.png " alt="carticon ">
-                                                            </button>
-                                                                <button class="product-btn-t ms-2 ">
-                                                                View details
-                                                                <img class="ms-2 " src="assets/img/service/parrow.png " alt="parrow ">
-                                                            </button>
-                                                            </div>
+                                            <div class="offer-slide-img">
+                                                <div class="offer-price">
+                                                    <div class="offer-img">
+                                                        <img src="assets/img/service/offer.png" alt="offer">
+                                                        <div class="offer-title">
+                                                            <h3>
+                                                                37 <span class="sub">%</span>
+                                                            </h3>
+                                                            <h4>OFF</h4>
                                                         </div>
-
-
                                                     </div>
                                                 </div>
+                                                <img src="assets/img/service/website1.png" loading="lazy" alt="website1">
+                                            </div>
+                                        </div>
+                                        <div class="position-relative ">
+
+                                            <div class="offer-slide-img">
+                                                <div class="offer-price">
+                                                    <div class="offer-img">
+                                                        <img src="assets/img/service/offer.png" alt="offer">
+                                                        <div class="offer-title">
+                                                            <h3>
+                                                                37 <span class="sub">%</span>
+                                                            </h3>
+                                                            <h4>OFF</h4>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <img src="assets/img/service/website1.png" loading="lazy" alt="website1">
+                                            </div>
+                                        </div>
+                                        <div class="position-relative ">
+
+                                            <div class="offer-slide-img">
+                                                <div class="offer-price">
+                                                    <div class="offer-img">
+                                                        <img src="assets/img/service/offer.png" alt="offer">
+                                                        <div class="offer-title">
+                                                            <h3>
+                                                                37 <span class="sub">%</span>
+                                                            </h3>
+                                                            <h4>OFF</h4>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <img src="assets/img/service/website1.png" loading="lazy" alt="website1">
                                             </div>
                                         </div>
                                     </div>
-                                    <!-- col-md-6 col-lg-6 col-xl-4 mb-3 End -->
-                                    <div class="col-md-6 col-lg-6 col-xl-4 mb-3">
-                                        <div class="product-items">
-                                            <div class="product-slider-items">
-                                                <div class="product-img-s product-img-slider owl-carousel  owl-theme">
-                                                    <div class="position-relative ">
+                                    <div class="product-slider-items-content">
+                                        <h5 class="f-size-16 black-f">E-commerce Website</h5>
+                                        <div class="product-price-item">
 
-                                                        <div class="offer-slide-img">
-                                                            <div class="offer-price">
-                                                                <div class="offer-img">
-                                                                    <img src="assets/img/service/offer.png" alt="offer">
-                                                                    <div class="offer-title">
-                                                                        <h3>
-                                                                            37 <span class="sub">%</span>
-                                                                        </h3>
-                                                                        <h4>OFF</h4>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                            <img src="assets/img/service/website1.png" loading="lazy" alt="website1">
-                                                        </div>
-                                                    </div>
-                                                    <div class="position-relative ">
+                                            <div class="p-price  mt-15">
+                                                <div class="price-review">
+                                                    <h5 class="price-title mb-1">
+                                                        $300
+                                                        <span class="f-size-16 ms-1"><del>$500</del></span>
 
-                                                        <div class="offer-slide-img">
-                                                            <div class="offer-price">
-                                                                <div class="offer-img">
-                                                                    <img src="assets/img/service/offer.png" alt="offer">
-                                                                    <div class="offer-title">
-                                                                        <h3>
-                                                                            37 <span class="sub">%</span>
-                                                                        </h3>
-                                                                        <h4>OFF</h4>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                            <img src="assets/img/service/website1.png" loading="lazy" alt="website1">
-                                                        </div>
-                                                    </div>
-                                                    <div class="position-relative ">
-
-                                                        <div class="offer-slide-img">
-                                                            <div class="offer-price">
-                                                                <div class="offer-img">
-                                                                    <img src="assets/img/service/offer.png" alt="offer">
-                                                                    <div class="offer-title">
-                                                                        <h3>
-                                                                            37 <span class="sub">%</span>
-                                                                        </h3>
-                                                                        <h4>OFF</h4>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                            <img src="assets/img/service/website1.png" loading="lazy" alt="website1">
-                                                        </div>
-                                                    </div>
-                                                    <div class="position-relative ">
-
-                                                        <div class="offer-slide-img">
-                                                            <div class="offer-price">
-                                                                <div class="offer-img">
-                                                                    <img src="assets/img/service/offer.png" alt="offer">
-                                                                    <div class="offer-title">
-                                                                        <h3>
-                                                                            37 <span class="sub">%</span>
-                                                                        </h3>
-                                                                        <h4>OFF</h4>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                            <img src="assets/img/service/website1.png" loading="lazy" alt="website1">
-                                                        </div>
-                                                    </div>
+                                                    </h5>
+                                                    <p>
+                                                        <i class="fas fa-star "></i>
+                                                        <i class="fas fa-star "></i>
+                                                        <i class="fas fa-star "></i>
+                                                        <i class="fas fa-star "></i>
+                                                        <span class="ms-1 f-size-16 ">(8)</span>
+                                                    </p>
                                                 </div>
-                                                <div class="product-slider-items-content">
-                                                    <h5 class="f-size-16 black-f">E-commerce Website</h5>
-                                                    <div class="product-price-item">
-
-                                                        <div class="p-price  mt-15">
-                                                            <div class="price-review">
-                                                                <h5 class="price-title mb-1">
-                                                                    $300
-                                                                    <span class="f-size-16 ms-1"><del>$500</del></span>
-
-                                                                </h5>
-                                                                <p>
-                                                                    <i class="fas fa-star "></i>
-                                                                    <i class="fas fa-star "></i>
-                                                                    <i class="fas fa-star "></i>
-                                                                    <i class="fas fa-star "></i>
-                                                                    <span class="ms-1 f-size-16 ">(8)</span>
-                                                                </p>
-                                                            </div>
-                                                            <div class="cart-price  d-flex ">
-                                                                <button class="product-btn-t ">
-                                                                <img src="assets/img/service/carticon.png " alt="carticon ">
-                                                            </button>
-                                                                <button class="product-btn-t ms-2 ">
-                                                                View details
-                                                                <img class="ms-2 " src="assets/img/service/parrow.png " alt="parrow ">
-                                                            </button>
-                                                            </div>
-                                                        </div>
-
-
-                                                    </div>
+                                                <div class="cart-price  d-flex ">
+                                                    <button class="product-btn-t ">
+                                                    <img src="assets/img/service/carticon.png " alt="carticon ">
+                                                </button>
+                                                     <a href="product-review-2.html" class="product-btn-t ms-2">
+                                                    View details
+                                                    <i class="fas fa-arrow-right ms-1"></i>
+                                                </a>
                                                 </div>
                                             </div>
+
+
                                         </div>
                                     </div>
-                                    <!-- col-md-6 col-lg-6 col-xl-4 mb-3 End -->
                                 </div>
                             </div>
                         </div>
-                        <!-- carousel-item End -->
-
+                        <!-- col-md-6 col-lg-6 col-xl-4 mb-3 End -->
                     </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                      <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                      <span class="visually-hidden">Next</span>
-                    </button>
                 </div>
                 <!-- carouselExampleControls End -->
             </div>
@@ -1491,7 +1284,7 @@
                 '<i class="fa fa-angle-left "></i>',
                 '<i class="fa fa-angle-right "></i>',
             ],
-            dots: true,
+            dots: false,
             responsive: {
                 0: {
                     items: 1,
