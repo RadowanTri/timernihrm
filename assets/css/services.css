@@ -3095,13 +3095,13 @@ cursor: default;
     justify-content: center;
 }
 
-.cart-price .product-btn-t:hover .cart-svg path {
+.product-btn-t:hover .cart-svg path {
     fill: #fff;
 }
-.cart-price .product-btn-t:hover .cart-svg:hover{
+.product-btn-t:hover .cart-svg:hover{
     fill: #fff;
 }
-.cart-price .product-btn-t  .cart-svg {
+.product-btn-t  .cart-svg {
 
     display: inline-block;
 }
