@@ -3174,7 +3174,7 @@ cursor: default;
     opacity: 1;
 }
 .project-details-grid  .caption .caption-title{
-    height: 36px;
+    /* height: 36px; */
     line-height: 18px;
     -webkit-line-clamp: 2;
     line-height: 18px;
@@ -3209,11 +3209,6 @@ cursor: default;
 .project-details-grid .profile-card:hover .caption.caption-2 {
     transform: translateY(-80px);
    
-}
-.project-details-grid  .caption .caption-title.caption-title-2{
-    height: 36px;
-    line-height: 18px;
-    -webkit-line-clamp: 2;
 }
 
   
