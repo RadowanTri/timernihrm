@@ -3202,6 +3202,13 @@ cursor: default;
     transform: translateY(-65px);
    
 }
+.project-details-grid  .caption .caption-title .caption-title-2{
+    height: 36px;
+    line-height: 18px;
+    -webkit-line-clamp: 2;
+ 
+
+}
 
   
 @media (min-width: 320px) and (max-width: 991px) {
