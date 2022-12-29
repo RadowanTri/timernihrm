@@ -3207,8 +3207,9 @@ cursor: default;
     width: 140px;
 }
 .project-details-grid .profile-card:hover .caption.caption-2 {
-    transform: translateY(-80px);
-   
+    position: absolute;
+    bottom: auto;
+    padding: 10px;
 }
 
   
