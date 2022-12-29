@@ -3174,11 +3174,11 @@ cursor: default;
     opacity: 1;
 }
 .project-details-grid  .caption .caption-title{
-    height: 36px;
+    height: 18px;
     line-height: 18px;
     display: -webkit-box;
     -webkit-box-orient: vertical;
-    -webkit-line-clamp: 2;
+    -webkit-line-clamp: 1  ;
     overflow: hidden;
     font-weight: 500;
     font-size: 16px;
@@ -3194,6 +3194,14 @@ cursor: default;
     line-height: 16px;
 }
 
+.project-details-grid .profile-card:hover .img.img-2{
+    transform: translateY(0px);
+    width: 150px;
+}
+.project-details-grid .profile-card:hover .caption.caption-2 {
+    transform: translateY(-65px);
+   
+}
 
   
 @media (min-width: 320px) and (max-width: 991px) {
