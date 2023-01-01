@@ -39,13 +39,13 @@
             <div class="bar bar-2"></div>
             <div class="bar bar-3"></div>
         </div>
-        <div class="pdf-header pl-50 pt-30">
+        <div class="pdf-header pt-30">
             <img src="assets/img/footer-logo.png" alt="logo">
         </div>
         <div class="main-content pl-60 pr-60">
 
         </div>
-        <div class="pdf-footer pl-50 pr-50">
+        <div class="pdf-footer">
             <div class="d-flex justify-content-between">
                 <img src="assets/img/footer-logo.png" alt="logo">
                 <img src="assets/img/footer-logo.png" alt="logo">
@@ -57,12 +57,23 @@
         .pdf-wrapper{
             /* width: 1693px; */
             /* height: 2439px; */
-            width: 793.92px; 
-            height: 1122.24px;
+            /* width: 793.92px; 
+            height: 1122.24px; */
             position: relative;
+            height: 100vh;
+            width: 100%;
+            padding-left: 50px;
+            padding-right: 50px;
+
         }
         .main-content{
-            height:880px;
+            height:78vh;
+            padding-left:70px;
+            padding-right: 70px;
+        }
+        .pdf-footer,
+        .pdf-header{
+            height: 11vh;
         }
         .pdf-header img{
             max-width: 140px;
@@ -75,7 +86,7 @@
         }
         .bar{
             width: 14px;
-            height: 350px;
+            height: 340px;
             margin-bottom: 10px;
             
         }
