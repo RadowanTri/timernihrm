@@ -1496,6 +1496,43 @@
         </div>
     </footer>
     <!-- footer end -->
+    <div class="shaper">
+    </div>
+    <style>
+        .shaper {
+            background: url("assets/img/footer-bg.png") repeat-x;
+            width: 100%;
+            margin: 0;
+            text-align: center;
+            height: 550px;
+            padding-top: 120px;
+            box-sizing: border-box;
+
+            animation: animatedBackground 480s linear;
+        }
+
+        .shaper h1 {
+            font-family: sans-serif;
+            font-size: 80px;
+            color: white;
+        }
+
+        .shaper h2 {
+            font-family: sans-serif;
+            font-size: 40px;
+            color: white;
+        }
+
+        @keyframes animatedBackground {
+            0% {
+                background-position: 0 0;
+            }
+
+            100% {
+                background-position: -4000px 0;
+            }
+        }
+        </style>
 
     <!--=== All Plugin ===-->
     <!--============= Jquery-3.6.0 =============-->
