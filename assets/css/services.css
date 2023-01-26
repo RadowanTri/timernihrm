@@ -3393,6 +3393,7 @@ cursor: default;
     border-radius: 0.25rem;
     position: relative;
     color: var(--s-primary-color);
+    cursor: pointer;
 }
 
 .guru-wrapper-navs  .nav-link svg{
